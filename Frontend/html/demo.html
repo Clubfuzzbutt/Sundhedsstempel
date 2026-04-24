@@ -329,9 +329,11 @@
             }
             
             // Opdater firmanavn (hent evt. fra CVR API)
-            document.getElementById('companyName').innerText = `Virksomhed med CVR: ${cvr}`;
+            const virksomhedsNavn = result.virksomhedsnavn || `Virksomhed med CVR: ${cvr}`;
+            document.getElementById('companyName').innerText = virksomhedsNavn;
             document.getElementById('companyCvr').innerText = `CVR: ${cvr}`;
             
+
             // Generer badge HTML
             let badgeHtml = `
                 <div class="badge">

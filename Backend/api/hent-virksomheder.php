@@ -262,12 +262,14 @@ function hentRegnskabsData($cvr) {
 // Hent data for det CVR der sendes via URL
 $cvr = isset($_GET['cvr']) ? $_GET['cvr'] : '10117224';
 $data = hentRegnskabsData($cvr);
+$navn = hentVirksomhedDataFraCVRAPI($cvr);
 
 // Returner JSON (INGEN HTML)
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 if ($data && isset($data['omsaetning'])) {
+    $data['virksomhedsnavn'] = $navn;
     echo json_encode($data);
 } else {
     echo json_encode(['error' => 'Ingen regnskabsdata fundet for CVR: ' . $cvr]);

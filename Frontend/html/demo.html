@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundhedsstempel Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        /* Main Card */
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Search Box */
+        .search-box {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .search-box button {
+            background: #f7b500;
+            border: none;
+            padding: 0 1.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-box button:hover {
+            background: #e0a500;
+        }
+
+        /* Company Name */
+        .company {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .company h2 {
+            font-size: 1.25rem;
+            color: #1a1a2e;
+        }
+
+        .company .cvr {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 0.25rem;
+        }
+
+        /* Badge */
+        .badge {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .badge-circle-green {
+            background: #4CAF50;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .badge-circle-yellow {
+            background: #FFC107;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+        }
+
+        .badge-circle-red {
+            background: #F44336;
+            box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+        }
+
+        .badge-icon {
+            font-size: 2.5rem;
+        }
+
+        .badge-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .badge-title-green {
+            color: #4CAF50;
+        }
+
+        .badge-title-yellow {
+            color: #FFC107;
+        }
+
+        .badge-title-red {
+            color: #F44336;
+        }
+
+        .badge-percentage {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Read More Button */
+        .read-more-btn {
+            width: 100%;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 0.75rem;
+        }
+
+        .read-more-btn:hover {
+            background: #e9ecef;
+        }
+
+        /* Expandable Panel */
+        .expandable-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+        }
+
+        .expandable-panel.open {
+            max-height: 500px;
+            transition: max-height 0.4s ease-in;
+        }
+
+        .panel-content {
+            padding: 1rem;
+        }
+
+        .panel-title {
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: #1a1a2e;
+        }
+
+        .threshold-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.5rem;
+        }
+
+        .threshold-table th, 
+        .threshold-table td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .threshold-table th {
+            background: #e9ecef;
+            font-weight: bold;
+        }
+
+        .green-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #4CAF50;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .yellow-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #FFC107;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .red-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #F44336;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .data-label {
+            color: #666;
+        }
+
+        .data-value {
+            font-weight: bold;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏥 Økonomisk Sundhedsstempel</h1>
+            <p>Tjek virksomhedens økonomiske stabilitet</p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" placeholder="Indtast CVR nummer" id="cvrInput" value="">
+            <button onclick="updateBadge()">Søg</button>
+        </div>
+
+        <!-- Company Info (Demo) -->
+        <div class="company">
+            <h2 id="companyName"></h2>
+            <div class="cvr" id="companyCvr"></div>
+        </div>
+
+        <!-- Badge Area - Dynamisk -->
+        <div id="badgeArea">
+            <!-- Indhold sættes dynamisk af JavaScript -->
+        </div>
+    </div>
+
+    <script>
+    async function updateBadge() {
+        const cvr = document.getElementById('cvrInput').value;
+        
+        if (!cvr || cvr.length !== 8) {
+            document.getElementById('companyName').innerText = 'Ugyldigt CVR nummer';
+            document.getElementById('companyCvr').innerText = 'CVR skal være 8 cifre';
+            return;
+        }
+        
+        document.getElementById('companyName').innerText = 'Henter data...';
+        document.getElementById('companyCvr').innerText = 'Vent venligst...';
+
+        try {
+            const response = await fetch(`http://localhost/sundhedsstempel/backend/api/hent-virksomheder.php?cvr=${cvr}`);
+            const result = await response.json();
+            
+            if (result.error || !result.omsaetning) {
+                document.getElementById('companyName').innerText = 'Ingen data fundet';
+                document.getElementById('companyCvr').innerText = `CVR: ${cvr} har ikke regnskabsdata`;
+                document.getElementById('badgeArea').innerHTML = '';
+                return;
+            }
+            
+            // Brug result direkte fra PHP
+            const soliditetsgrad = result.soliditetsgrad;
+            const overskudsgrad = result.overskudsgrad;
+            const likviditetsgrad = result.likviditetsgrad;
+            
+            // Bestem farve
+            let farve = '';
+            let status = '';
+            if (soliditetsgrad >= 30) {
+                farve = 'green';
+                status = 'Økonomisk Stabil';
+            } else if (soliditetsgrad >= 15) {
+                farve = 'yellow';
+                status = 'Økonomisk Middel';
+            } else {
+                farve = 'red';
+                status = 'Økonomisk Usikker';
+            }
+            
+            // Opdater firmanavn (hent evt. fra CVR API)
+            document.getElementById('companyName').innerText = `Virksomhed med CVR: ${cvr}`;
+            document.getElementById('companyCvr').innerText = `CVR: ${cvr}`;
+            
+            // Generer badge HTML
+            let badgeHtml = `
+                <div class="badge">
+                    <div class="badge-circle badge-circle-${farve}">
+                        <span class="badge-icon">${farve === 'green' ? '🛡️' : (farve === 'yellow' ? '⚠️' : '❗')}</span>
+                    </div>
+                    <div class="badge-title badge-title-${farve}">${status}</div>
+                    <div class="badge-percentage">Soliditetsgrad: ${soliditetsgrad}%</div>
+                    <div class="badge-percentage">Overskudsgrad: ${overskudsgrad}%</div>
+                    <div class="badge-percentage">Likviditetsgrad: ${likviditetsgrad}%</div>
+                </div>
+                <button class="read-more-btn" onclick="togglePanel()">📖 Læs mere om vurderingen</button>
+                <div id="expandablePanel" class="expandable-panel">
+                    <div class="panel-content">
+                        <div class="panel-title">Vurderingskriterier:</div>
+                        <table class="threshold-table">
+                            <tr><th>Nøgletal</th><th>Grøn</th><th>Gul</th><th>Rød</th></tr>
+                            <tr><td>Soliditetsgrad</td><td><span class="green-dot"></span> ≥ 30%</td><td><span class="yellow-dot"></span> 15-29%</td><td><span class="red-dot"></span> < 15%</td></tr>
+                            <tr><td>Overskudsgrad</td><td><span class="green-dot"></span> ≥ 5%</td><td><span class="yellow-dot"></span> 0-4,9%</td><td><span class="red-dot"></span> Negativ</td></tr>
+                            <tr><td>Likviditetsgrad</td><td><span class="green-dot"></span> ≥ 100%</td><td><span class="yellow-dot"></span> 50-99%</td><td><span class="red-dot"></span> < 50%</td></tr>
+                        </table>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('badgeArea').innerHTML = badgeHtml;
+            
+            const panel = document.getElementById('expandablePanel');
+            if (panel) panel.classList.remove('open');
+            
+        } catch(error) {
+            console.error('Fejl:', error);
+            document.getElementById('companyName').innerHTML = 'Fejl ved forbindelse';
+            document.getElementById('companyCvr').innerHTML = 'Kan ikke nå serveren';
+        }
+    }
+    
+    function togglePanel() {
+        const panel = document.getElementById('expandablePanel');
+        if (panel) panel.classList.toggle('open');
+    }
+    
+    // Initial load
+    updateBadge();
+</script>
+</body>
+</html>

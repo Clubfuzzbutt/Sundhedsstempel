@@ -2,7 +2,7 @@
 /*  henter kun cvr data
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
+*/
 function hentVirksomhedDataFraCVRAPI($cvr) {
     $url = "http://cvrapi.dk/api?search={$cvr}&country=dk";
     
@@ -20,10 +20,10 @@ function hentVirksomhedDataFraCVRAPI($cvr) {
         echo "FEJL: Kunne ikke hente data fra CVRAPI.dk<br>";
         return null;
     }
-    
-    return json_decode($response, true);
+    $data = json_decode($response, true);
+    return $data['name'] ?? '';
 }
-
+/*
 $cvr = "10117224";
 echo "Henter data for CVR: $cvr fra CVRAPI.dk...<br>";
 $data = hentVirksomhedDataFraCVRAPI($cvr);
@@ -259,49 +259,19 @@ function hentRegnskabsData($cvr) {
 }
 
 // Test med DSV
-$cvr = "47458714";
+// Hent data for det CVR der sendes via URL
+$cvr = isset($_GET['cvr']) ? $_GET['cvr'] : '10117224';
 $data = hentRegnskabsData($cvr);
 
-if ($data) {
-    echo "<h2>DSV (CVR: $cvr)</h2>";
-    echo "<table border='1' cellpadding='10'>";
-    echo "<tr><th>Nøgletal</th><th>Værdi</th></tr>";
-    echo "<tr><td>Omsætning</td><td>" . number_format($data['omsaetning'] ?? 0, 0, ',', '.') . " kr.</td></tr>";
-    echo "<tr><td>Resultat</td><td>" . number_format($data['resultat'] ?? 0, 0, ',', '.') . " kr.</td></tr>";
-    echo "<tr><td>Egenkapital</td><td>" . number_format($data['egenkapital'] ?? 0, 0, ',', '.') . " kr.</td></tr>";
-    echo "<tr><td>Aktiver</td><td>" . number_format($data['aktiver'] ?? 0, 0, ',', '.') . " kr.</td></tr>";
-    echo "<tr><td>Omsætningsaktiver</td><td>" . number_format($data['omsaetningsaktiver'] ?? 0, 0, ',', '.') . " kr.</td></tr>";
-    echo "<tr><td>Kortfristet gæld</td><td>" . number_format($data['kortfristetGaeld'] ?? 0, 0, ',', '.') . " kr.</td></tr>";
-    echo "<tr><td style='background:#e8f5e9'><strong>Soliditetsgrad</strong></td>";
-    echo "<td style='background:#e8f5e9'><strong>" . ($data['soliditetsgrad'] ?? 'N/A') . "%</strong></td></tr>";
-    echo "<tr><td style='background:#fff3e0'><strong>Overskudsgrad</strong></td>";
-    echo "<td style='background:#fff3e0'><strong>" . ($data['overskudsgrad'] ?? 'N/A') . "%</strong></td></tr>";
-    echo "<tr><td style='background:#e3f2fd'><strong>Likviditetsgrad</strong></td>";
-    echo "<td style='background:#e3f2fd'><strong>" . ($data['likviditetsgrad'] ?? 'N/A') . "%</strong></td></tr>";
-    echo "</table>";
-    
-    // Sundhedsstempel
-    if (isset($data['soliditetsgrad'])) {
-        if ($data['soliditetsgrad'] >= 30) {
-            $farve = "#4CAF50";
-            $status = "STABIL";
-            $beskrivelse = "Virksomheden har en stærk økonomi og lav risiko";
-        } elseif ($data['soliditetsgrad'] >= 15) {
-            $farve = "#FFC107";
-            $status = "MIDDEL";
-            $beskrivelse = "Virksomheden har en moderat økonomi";
-        } else {
-            $farve = "#F44336";
-            $status = "USIKKER";
-            $beskrivelse = "Virksomheden har en svag økonomi og høj risiko";
-        }
-        
-        echo "<div style='background-color: $farve; color: white; padding: 20px; text-align: center; border-radius: 10px; margin-top: 20px;'>";
-        echo "<h2>🏥 ØKONOMISK SUNDHEDSSTEMPEL: $status</h2>";
-        echo "<p>$beskrivelse</p>";
-        echo "</div>";
-    }
+// Returner JSON (INGEN HTML)
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+
+if ($data && isset($data['omsaetning'])) {
+    echo json_encode($data);
 } else {
-    echo "Ingen data for CVR: $cvr";
+    echo json_encode(['error' => 'Ingen regnskabsdata fundet for CVR: ' . $cvr]);
 }
+
+// STOP HER - INGEN MERE KODE EFTER DETTE!
 ?>

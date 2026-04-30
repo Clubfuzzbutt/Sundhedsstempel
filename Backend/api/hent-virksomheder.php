@@ -213,35 +213,50 @@ function hentRegnskabsData($cvr) {
     $nogletal = [];
     
     // Omsætning (Revenue)
-    if (preg_match('/<(?:ifrs-full|fsa|DSV):Revenue[^>]*>(\d+)/i', $xml, $match)) {
+    if (preg_match('/<[a-z]+:Revenue[^>]*>(\d+)/i', $xml, $match)) {                 
+        $nogletal['omsaetning'] = (int)$match[1];
+    } elseif (preg_match('/Revenue[^>]*>(\d+)/i', $xml, $match)) {
         $nogletal['omsaetning'] = (int)$match[1];
     }
-    
+
     // Resultat (ProfitLoss)
-    if (preg_match('/<(?:ifrs-full|fsa|DSV):ProfitLoss[^>]*>(\d+)/i', $xml, $match)) {
+    if (preg_match('/<[a-z]+:ProfitLoss[^>]*>(\d+)/i', $xml, $match)) {
+        $nogletal['resultat'] = (int)$match[1];
+    } elseif (preg_match('/<[a-z]+:NetProfitLoss[^>]*>(\d+)/i', $xml, $match)) {
+        $nogletal['resultat'] = (int)$match[1];
+    } elseif (preg_match('/ProfitLoss[^>]*>(\d+)/i', $xml, $match)) {
         $nogletal['resultat'] = (int)$match[1];
     }
-    
+
     // Egenkapital (Equity)
-    if (preg_match('/<(?:ifrs-full|fsa|DSV):Equity[^>]*>(\d+)/i', $xml, $match)) {
+    if (preg_match('/<[a-z]+:Equity[^>]*>(\d+)/i', $xml, $match)) {
+        $nogletal['egenkapital'] = (int)$match[1];
+    } elseif (preg_match('/<[a-z]+:EquityAttributableToOwnersOfParent[^>]*>(\d+)/i', $xml, $match)) {
+        $nogletal['egenkapital'] = (int)$match[1];
+    } elseif (preg_match('/Equity[^>]*>(\d+)/i', $xml, $match)) {
         $nogletal['egenkapital'] = (int)$match[1];
     }
-    
+
     // Aktiver (Assets)
-    if (preg_match('/<(?:ifrs-full|fsa|DSV):Assets[^>]*>(\d+)/i', $xml, $match)) {
+    if (preg_match('/<[a-z]+:Assets[^>]*>(\d+)/i', $xml, $match)) {
+        $nogletal['aktiver'] = (int)$match[1];
+    } elseif (preg_match('/Assets[^>]*>(\d+)/i', $xml, $match)) {
         $nogletal['aktiver'] = (int)$match[1];
     }
-    
+
     // Omsætningsaktiver (CurrentAssets)
-    if (preg_match('/<(?:ifrs-full|fsa|DSV):CurrentAssets[^>]*>(\d+)/i', $xml, $match)) {
+    if (preg_match('/<[a-z]+:CurrentAssets[^>]*>(\d+)/i', $xml, $match)) {
+        $nogletal['omsaetningsaktiver'] = (int)$match[1];
+    } elseif (preg_match('/CurrentAssets[^>]*>(\d+)/i', $xml, $match)) {
         $nogletal['omsaetningsaktiver'] = (int)$match[1];
     }
-    
+
     // Kortfristet gæld (CurrentLiabilities)
-    if (preg_match('/<(?:ifrs-full|fsa|DSV):CurrentLiabilities[^>]*>(\d+)/i', $xml, $match)) {
+    if (preg_match('/<[a-z]+:CurrentLiabilities[^>]*>(\d+)/i', $xml, $match)) {
+        $nogletal['kortfristetGaeld'] = (int)$match[1];
+    } elseif (preg_match('/CurrentLiabilities[^>]*>(\d+)/i', $xml, $match)) {
         $nogletal['kortfristetGaeld'] = (int)$match[1];
     }
-    
     // Beregn nøgletal
     if (isset($nogletal['egenkapital']) && isset($nogletal['aktiver']) && $nogletal['aktiver'] > 0) {
         $nogletal['soliditetsgrad'] = round(($nogletal['egenkapital'] / $nogletal['aktiver']) * 100, 1);
@@ -262,18 +277,17 @@ function hentRegnskabsData($cvr) {
 // Hent data for det CVR der sendes via URL
 $cvr = isset($_GET['cvr']) ? $_GET['cvr'] : '10117224';
 $data = hentRegnskabsData($cvr);
-$navn = hentVirksomhedDataFraCVRAPI($cvr);
+//$navn = hentVirksomhedDataFraCVRAPI($cvr);
 
 // Returner JSON (INGEN HTML)
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 if ($data && isset($data['omsaetning'])) {
-    $data['virksomhedsnavn'] = $navn;
+    $data['virksomhedsnavn'] = '';
     echo json_encode($data);
 } else {
     echo json_encode(['error' => 'Ingen regnskabsdata fundet for CVR: ' . $cvr]);
 }
 
-// STOP HER - INGEN MERE KODE EFTER DETTE!
 ?>

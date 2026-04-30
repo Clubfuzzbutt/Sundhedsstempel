@@ -290,7 +290,7 @@
         const cvr = document.getElementById('cvrInput').value;
         
         if (!cvr || cvr.length !== 8) {
-            document.getElementById('companyName').innerText = 'Ugyldigt CVR nummer';
+            document.getElementById('companyName').innerText = 'Indtast CVR nummer';
             document.getElementById('companyCvr').innerText = 'CVR skal være 8 cifre';
             return;
         }
@@ -314,20 +314,49 @@
             const overskudsgrad = result.overskudsgrad;
             const likviditetsgrad = result.likviditetsgrad;
             
-            // Bestem farve
+            
+            //Beregnet ud fra mine 3 nøgletal
+            let score = 0
+
+            //Soliditetsgrad
+            if(soliditetsgrad >= 30) {
+                score += 1;
+            } else if (soliditetsgrad <30 && soliditetsgrad >=10) {
+                score += 0.5;
+            } 
+            
+            // Overskudsgrad
+            if(overskudsgrad >= 10) {
+                score += 1;
+            } else if (overskudsgrad <10 && overskudsgrad >=1) {
+                score += 0.5;
+            } 
+
+            //Likviditetsgrad
+            if(likviditetsgrad >= 150) {
+                score += 1;
+            } else if (likviditetsgrad <150 && likviditetsgrad >=100) {
+                score += 0.5;
+            } 
+
+            //Bestem farve ud fra samlet score
             let farve = '';
-            let status = '';
-            if (soliditetsgrad >= 30) {
+            let status= '';
+
+            if (score >= 2.5) {
                 farve = 'green';
-                status = 'Økonomisk Stabil';
-            } else if (soliditetsgrad >= 15) {
+                status = 'Økonomisk Stabil'
+            } else if (score >=2) {
                 farve = 'yellow';
-                status = 'Økonomisk Middel';
-            } else {
+                status = 'Økonomisk Middel'
+            } else if (score <2) {
                 farve = 'red';
                 status = 'Økonomisk Usikker';
+            } else {
+                farve = 'grey';
+                status = 'Ukendt';
             }
-            
+
             // Opdater firmanavn (hent evt. fra CVR API)
             const virksomhedsNavn = result.virksomhedsnavn || `Virksomhed med CVR: ${cvr}`;
             document.getElementById('companyName').innerText = virksomhedsNavn;
@@ -350,11 +379,26 @@
                     <div class="panel-content">
                         <div class="panel-title">Vurderingskriterier:</div>
                         <table class="threshold-table">
-                            <tr><th>Nøgletal</th><th>Grøn</th><th>Gul</th><th>Rød</th></tr>
-                            <tr><td>Soliditetsgrad</td><td><span class="green-dot"></span> ≥ 30%</td><td><span class="yellow-dot"></span> 15-29%</td><td><span class="red-dot"></span> < 15%</td></tr>
-                            <tr><td>Overskudsgrad</td><td><span class="green-dot"></span> ≥ 5%</td><td><span class="yellow-dot"></span> 0-4,9%</td><td><span class="red-dot"></span> Negativ</td></tr>
-                            <tr><td>Likviditetsgrad</td><td><span class="green-dot"></span> ≥ 100%</td><td><span class="yellow-dot"></span> 50-99%</td><td><span class="red-dot"></span> < 50%</td></tr>
-                        </table>
+                        <tr><th>Nøgletal</th><th>Grøn</th><th>Gul</th><th>Rød</th></tr>
+                        <tr>
+                            <td>Soliditetsgrad</td>
+                            <td><span class="green-dot"></span> ≥ 30%</td>
+                            <td><span class="yellow-dot"></span> 10-29%</td>
+                            <td><span class="red-dot"></span> < 10%</td>
+                        </tr>
+                        <tr>
+                            <td>Overskudsgrad</td>
+                            <td><span class="green-dot"></span> ≥ 10%</td>
+                            <td><span class="yellow-dot"></span> 1-9,9%</td>
+                            <td><span class="red-dot"></span> < 1%</td>
+                        </tr>
+                        <tr>
+                            <td>Likviditetsgrad</td>
+                            <td><span class="green-dot"></span> ≥ 150%</td>
+                            <td><span class="yellow-dot"></span> 100-149%</td>
+                            <td><span class="red-dot"></span> < 100%</td>
+                        </tr>
+                    </table>
                     </div>
                 </div>
             `;

@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance"
+            xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:arr="http://xbrl.dcca.dk/arr"
+            xmlns:cmn="http://xbrl.dcca.dk/cmn"
+            xmlns:sob="http://xbrl.dcca.dk/sob"
+            xmlns:link="http://www.xbrl.org/2003/linkbase"
+            xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+            xmlns:ix="http://www.xbrl.org/2013/inlineXBRL"
+            xmlns:mrv="http://xbrl.dcca.dk/mrv"
+            xmlns:fsa="http://xbrl.dcca.dk/fsa"
+            xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+            xmlns:gsd="http://xbrl.dcca.dk/gsd"
+            xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+   <link:schemaRef xlink:href="http://archprod.service.eogs.dk/taxonomy/20231001/entryDanishGAAPBalanceSheetAccountFormIncomeStatementByFunctionIncludingManagementsReviewStatisticsAndTax20231001.xsd"
+                   xlink:type="simple"/>
+   <xbrli:context id="D0">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="D8">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfAuditorDimension">
+                <cmn:auditorIdentifier>auditor_1</cmn:auditorIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D9">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfAuditorDimension">
+                <cmn:auditorIdentifier>auditor_2</cmn:auditorIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfMemberOfExecutiveBoardDimension">
+                <cmn:memberOfBoardIdentifier>memberOfBoardIdentifier_1</cmn:memberOfBoardIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfMemberOfSupervisoryBoardDimension">
+                <cmn:memberOfBoardIdentifier>memberOfBoardIdentifier_1</cmn:memberOfBoardIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D3">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfMemberOfSupervisoryBoardDimension">
+                <cmn:memberOfBoardIdentifier>memberOfBoardIdentifier_2</cmn:memberOfBoardIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D4">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfMemberOfSupervisoryBoardDimension">
+                <cmn:memberOfBoardIdentifier>memberOfBoardIdentifier_3</cmn:memberOfBoardIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D5">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfMemberOfSupervisoryBoardDimension">
+                <cmn:memberOfBoardIdentifier>memberOfBoardIdentifier_4</cmn:memberOfBoardIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D6">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfMemberOfSupervisoryBoardDimension">
+                <cmn:memberOfBoardIdentifier>memberOfBoardIdentifier_5</cmn:memberOfBoardIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D7">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:typedMember dimension="cmn:IdentificationOfMemberOfSupervisoryBoardDimension">
+                <cmn:memberOfBoardIdentifier>memberOfBoardIdentifier_6</cmn:memberOfBoardIdentifier>
+              </xbrldi:typedMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D10">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2023-01-01</xbrli:startDate>
+              <xbrli:endDate>2023-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="D11">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2022-01-01</xbrli:startDate>
+              <xbrli:endDate>2022-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="D12">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2021-01-01</xbrli:startDate>
+              <xbrli:endDate>2021-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="D13">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2020-01-01</xbrli:startDate>
+              <xbrli:endDate>2020-12-31</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="I0">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="I1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="I2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2022-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="I3">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2021-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="I4">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2020-12-31</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+   <xbrli:context id="I5">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:ContributedCapitalMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I6">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:RetainedEarningsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I7">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:ProposedDividendRecognisedInEquityMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D14">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:ContributedCapitalMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D15">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:RetainedEarningsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D16">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:ProposedDividendRecognisedInEquityMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I8">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:ContributedCapitalMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I9">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:RetainedEarningsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I10">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfEquityDimension">fsa:ProposedDividendRecognisedInEquityMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I11">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfIntangibleAssetsDimension">fsa:AcquiredIntangibleAssetsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I12">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfIntangibleAssetsDimension">fsa:GoodwillMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I13">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfIntangibleAssetsDimension">fsa:AcquiredIntangibleAssetsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I14">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfIntangibleAssetsDimension">fsa:GoodwillMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D17">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfIntangibleAssetsDimension">fsa:AcquiredIntangibleAssetsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D18">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfIntangibleAssetsDimension">fsa:GoodwillMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I15">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfPropertyPlantAndEquipmentDimension">fsa:FixturesFittingsToolsAndEquipmentMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I16">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfPropertyPlantAndEquipmentDimension">fsa:LeaseholdImprovementsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D19">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfPropertyPlantAndEquipmentDimension">fsa:FixturesFittingsToolsAndEquipmentMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D20">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfPropertyPlantAndEquipmentDimension">fsa:LeaseholdImprovementsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I17">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfPropertyPlantAndEquipmentDimension">fsa:FixturesFittingsToolsAndEquipmentMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I18">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfPropertyPlantAndEquipmentDimension">fsa:LeaseholdImprovementsMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I19">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2023-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfInvestmentsDimension">fsa:DepositsLongtermInvestmentsAndReceivablesMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="D21">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-01-01</xbrli:startDate>
+              <xbrli:endDate>2024-12-31</xbrli:endDate>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfInvestmentsDimension">fsa:DepositsLongtermInvestmentsAndReceivablesMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:context id="I20">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.dcca.dk/cvr">10117224</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2024-12-31</xbrli:instant>
+            </xbrli:period>
+            <xbrli:scenario>
+              <xbrldi:explicitMember dimension="fsa:ClassesOfInvestmentsDimension">fsa:DepositsLongtermInvestmentsAndReceivablesMember</xbrldi:explicitMember>
+            </xbrli:scenario>
+          </xbrli:context>
+   <xbrli:unit id="U-iso4217-DKK">
+            <xbrli:measure>iso4217:DKK</xbrli:measure>
+          </xbrli:unit>
+   <xbrli:unit id="U-pure">
+            <xbrli:measure>pure</xbrli:measure>
+          </xbrli:unit>
+   <xbrli:unit id="U-xbrli-pure">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+          </xbrli:unit>
+   <gsd:InformationOnTypeOfSubmittedReport contextRef="D0">Årsrapport</gsd:InformationOnTypeOfSubmittedReport>
+   <gsd:ReportingPeriodStartDate contextRef="D0">2024-01-01</gsd:ReportingPeriodStartDate>
+   <gsd:PrecedingReportingPeriodStartDate contextRef="D0">2023-01-01</gsd:PrecedingReportingPeriodStartDate>
+   <gsd:ReportingPeriodEndDate contextRef="D0">2024-12-31</gsd:ReportingPeriodEndDate>
+   <gsd:PredingReportingPeriodEndDate contextRef="D0">2023-12-31</gsd:PredingReportingPeriodEndDate>
+   <sob:PlaceOfSignatureOfStatement contextRef="D0">2025-06-30</sob:PlaceOfSignatureOfStatement>
+   <gsd:IdentificationNumberCvrOfReportingEntity contextRef="D0">10117224</gsd:IdentificationNumberCvrOfReportingEntity>
+   <gsd:DateOfGeneralMeeting contextRef="D0">2025-06-30</gsd:DateOfGeneralMeeting>
+   <gsd:DateOfFoundationOfReportingEntity contextRef="D0">2003-01-07</gsd:DateOfFoundationOfReportingEntity>
+   <fsa:ClassOfReportingEntity contextRef="D0">Reporting class C, large enterprise</fsa:ClassOfReportingEntity>
+   <gsd:NameOfSubmittingEnterprise contextRef="D0">KPMG</gsd:NameOfSubmittingEnterprise>
+   <gsd:AddressOfSubmittingEnterprisePostcodeAndTown contextRef="D0">2100 København Ø</gsd:AddressOfSubmittingEnterprisePostcodeAndTown>
+   <gsd:AddressOfSubmittingEnterpriseStreetAndNumber contextRef="D0">Dampfærgevej 28</gsd:AddressOfSubmittingEnterpriseStreetAndNumber>
+   <gsd:IdentificationNumberCvrOfSubmittingEnterprise contextRef="D0">25578198</gsd:IdentificationNumberCvrOfSubmittingEnterprise>
+   <cmn:TypeOfAuditorAssistance contextRef="D0" xml:lang="en">Auditor's report on audited financial statements</cmn:TypeOfAuditorAssistance>
+   <arr:SignatureOfAuditorsPlace contextRef="D0">Copenhagen</arr:SignatureOfAuditorsPlace>
+   <arr:SignatureOfAuditorsDate contextRef="D0">2025-06-30</arr:SignatureOfAuditorsDate>
+   <cmn:NameOfAuditFirm contextRef="D8">KPMG</cmn:NameOfAuditFirm>
+   <cmn:IdentificationNumberCvrOfAuditFirm contextRef="D8">25578198</cmn:IdentificationNumberCvrOfAuditFirm>
+   <gsd:AddressOfAuditorStreetName contextRef="D8">Dampfærgevej</gsd:AddressOfAuditorStreetName>
+   <gsd:AddressOfAuditorStreetBuildingIdentifier contextRef="D8">28</gsd:AddressOfAuditorStreetBuildingIdentifier>
+   <gsd:AddressOfAuditorPostCodeIdentifier contextRef="D8">2100</gsd:AddressOfAuditorPostCodeIdentifier>
+   <cmn:NameOfAuditFirm contextRef="D9">KPMG</cmn:NameOfAuditFirm>
+   <cmn:IdentificationNumberCvrOfAuditFirm contextRef="D9">25578198</cmn:IdentificationNumberCvrOfAuditFirm>
+   <gsd:AddressOfAuditorStreetName contextRef="D9">Dampfærgevej</gsd:AddressOfAuditorStreetName>
+   <gsd:AddressOfAuditorStreetBuildingIdentifier contextRef="D9">28</gsd:AddressOfAuditorStreetBuildingIdentifier>
+   <gsd:AddressOfAuditorPostCodeIdentifier contextRef="D9">2100</gsd:AddressOfAuditorPostCodeIdentifier>
+   <fsa:AccountingPoliciesAreUnchangedFromPreviousPeriod contextRef="D0">true</fsa:AccountingPoliciesAreUnchangedFromPreviousPeriod>
+   <gsd:NameAndSurnameOfChairmanOfGeneralMeeting contextRef="D0">Nicolai Mallet</gsd:NameAndSurnameOfChairmanOfGeneralMeeting>
+   <sob:IdentificationOfApprovedAnnualReport contextRef="D0" xml:lang="en">The Board of Directors and the Executive Board have today discussed and approved the annual report for Maxi Zoo Denmark A/S for the financial year 1 January - 31 December 2024.</sob:IdentificationOfApprovedAnnualReport>
+   <sob:ConfirmationThatAnnualReportIsPresentedInAccordanceWithRequirementsProvidedForByLegislationAnyStandardsAndRequirementsProvidedByArticlesOfAssociationOrByAgreement contextRef="D0" xml:lang="en">The annual report has been prepared in accordance with the Danish Financial Statements Act.</sob:ConfirmationThatAnnualReportIsPresentedInAccordanceWithRequirementsProvidedForByLegislationAnyStandardsAndRequirementsProvidedByArticlesOfAssociationOrByAgreement>
+   <sob:ConfirmationThatFinancialStatementGivesTrueAndFairViewOfAssetsLiabilitiesEquityFinancialPositionAndResults contextRef="D0" xml:lang="en">In our opinion, the financial statements give a true and fair view of the Company's assets, liabilities and financial position at 31 December 2024 and of the results of the Company's operations  for the financial year 1 January - 31 December 2024.Further, in our opinion, the Management's review gives a fair review of the development in the Company's activities and financial matters, of the results for the year and of the Company's financial position.</sob:ConfirmationThatFinancialStatementGivesTrueAndFairViewOfAssetsLiabilitiesEquityFinancialPositionAndResults>
+   <sob:RecommendationForApprovalOfAnnualReportByGeneralMeeting contextRef="D0" xml:lang="en">We recommend that the annual report be approved at the annual general meeting.</sob:RecommendationForApprovalOfAnnualReportByGeneralMeeting>
+   <cmn:NameAndSurnameOfMemberOfExecutiveBoard contextRef="D1">Bo Hoelgaard Demant</cmn:NameAndSurnameOfMemberOfExecutiveBoard>
+   <cmn:TitleOfMemberOfExecutiveBoard contextRef="D1" xml:lang="en"></cmn:TitleOfMemberOfExecutiveBoard>
+   <cmn:NameAndSurnameOfMemberOfSupervisoryBoard contextRef="D2">Sven Girmendonk</cmn:NameAndSurnameOfMemberOfSupervisoryBoard>
+   <cmn:TitleOfMemberOfSupervisoryBoard contextRef="D2" xml:lang="en">Chairman</cmn:TitleOfMemberOfSupervisoryBoard>
+   <cmn:NameAndSurnameOfMemberOfSupervisoryBoard contextRef="D3">Peter Gunnar Østergaard Hansen</cmn:NameAndSurnameOfMemberOfSupervisoryBoard>
+   <cmn:TitleOfMemberOfSupervisoryBoard contextRef="D3" xml:lang="en"></cmn:TitleOfMemberOfSupervisoryBoard>
+   <cmn:NameAndSurnameOfMemberOfSupervisoryBoard contextRef="D4">Majbritt Houmann Hansen</cmn:NameAndSurnameOfMemberOfSupervisoryBoard>
+   <cmn:TitleOfMemberOfSupervisoryBoard contextRef="D4" xml:lang="en"></cmn:TitleOfMemberOfSupervisoryBoard>
+   <cmn:NameAndSurnameOfMemberOfSupervisoryBoard contextRef="D5">Linda Betina Ellegaard</cmn:NameAndSurnameOfMemberOfSupervisoryBoard>
+   <cmn:TitleOfMemberOfSupervisoryBoard contextRef="D5" xml:lang="en"></cmn:TitleOfMemberOfSupervisoryBoard>
+   <cmn:NameAndSurnameOfMemberOfSupervisoryBoard contextRef="D6">Norbert Marschallinger</cmn:NameAndSurnameOfMemberOfSupervisoryBoard>
+   <cmn:TitleOfMemberOfSupervisoryBoard contextRef="D6" xml:lang="en"></cmn:TitleOfMemberOfSupervisoryBoard>
+   <cmn:NameAndSurnameOfMemberOfSupervisoryBoard contextRef="D7">Steven Møller Pinholt</cmn:NameAndSurnameOfMemberOfSupervisoryBoard>
+   <cmn:TitleOfMemberOfSupervisoryBoard contextRef="D7" xml:lang="en"></cmn:TitleOfMemberOfSupervisoryBoard>
+   <arr:IndependentAuditorsReportsAudit contextRef="D0" xml:lang="en">Independent auditor's report</arr:IndependentAuditorsReportsAudit>
+   <arr:AddresseeOfAuditorsReportOnAuditedFinancialStatements contextRef="D0" xml:lang="en">To the shareholder of Maxi Zoo Denmark A/S</arr:AddresseeOfAuditorsReportOnAuditedFinancialStatements>
+   <arr:TypeOfModifiedOpinionOnAuditedFinancialStatements contextRef="D0" xml:lang="en">Opinion</arr:TypeOfModifiedOpinionOnAuditedFinancialStatements>
+   <arr:OpinionOnAuditedFinancialStatements contextRef="D0" xml:lang="en">We have audited the financial statements of Maxi Zoo Denmark A/S for the financial year 1 January - 31 December 2024, comprising income statement, balance sheet, statement of changes in equity and notes, including accounting policies. The financial statements are prepared in accordance with the Danish Financial Statements Act. In our opinion, the financial statements give a true and fair view of the Company's assets, liabilities and financial position at 31 December 2024 and of the results of the Company's operations  for the financial year 1 January - 31 December 2024 in accordance with the Danish Financial Statements Act.</arr:OpinionOnAuditedFinancialStatements>
+   <arr:TypeOfBasisForModifiedOpinionOnAuditedFinancialStatements contextRef="D0" xml:lang="en">Basis for Opinion</arr:TypeOfBasisForModifiedOpinionOnAuditedFinancialStatements>
+   <arr:DescriptionOfQualificationsOfAuditedFinancialStatements contextRef="D0" xml:lang="en">We conducted our audit in accordance with International Standards on Auditing (ISAs) and the additional requirements applicable in Denmark. Our responsibilities under those standards and requirements are further described in the "Auditor's responsibilities for the audit of the financial statements" section of our report.We are independent of the Company in accordance with the International Ethics Standards Board for Accountants' International Code of Ethics for Professional Accountants (IESBA Code) and the additional ethical requirements applicable in Denmark, and we have fulfilled our other ethical responsibilities in accordance with these requirements and the IESBA Code. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.</arr:DescriptionOfQualificationsOfAuditedFinancialStatements>
+   <arr:StatementOfExecutiveAndSupervisoryBoardsResponsibilityForFinancialStatements contextRef="D0" xml:lang="en">Management's responsibility for the financial statementsManagement is responsible for the preparation of financial statements that give a true and fair view in accordance with the Danish Financial Statements Act and for such internal control that Management determines is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error. In preparing the financial statements, Management is responsible for assessing the Company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern and using the going concern basis of accounting in preparing the financial statements unless Management either intends to liquidate the Company or to cease operations, or has no realistic alternative but to do so.</arr:StatementOfExecutiveAndSupervisoryBoardsResponsibilityForFinancialStatements>
+   <arr:StatementOfAuditorsResponsibilityForAuditAndAuditPerformed contextRef="D0" xml:lang="en">Auditor's responsibilities for the audit of the financial statementsOur objectives are to obtain reasonable assurance as to whether the financial statements as a whole are free from material misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion. Reasonable assurance is a high level of assurance but is not a guarantee that an audit conducted in accordance with ISAs and the additional requirements in Denmark will always detect a material misstatement when it exists. Misstatements may arise from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be expected to influence the economic decisions of financial statement users made on the basis of these financial statements.As part of an audit conducted in accordance with ISAs and the additional requirements applicable in Denmark, we exercise professional judgement and maintain professional scepticism throughout the audit. We alsoidentify and assess the risks of material misstatement of the company financial statements, whether due to fraud or error, design and perform audit procedures responsive to those risks, and obtain audit evidence that is sufficient and appropriate to provide a basis for our opinion. The risk of not detecting a material misstatement resulting from fraud is higher than for one resulting from error as fraud may involve collusion, forgery, intentional omissions, misrepresentations or the override of internal control.obtain an understanding of internal control relevant to the audit in order to design audit procedures that are appropriate in the circumstances, but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control.evaluate the appropriateness of accounting policies used and the reasonableness of accounting estimates and related disclosures made by Management.conclude on the appropriateness of Management's use of the going concern basis of accounting in preparing the financial statements and, based on the audit evidence obtained, whether a material uncertainty exists related to events or conditions that may cast significant doubt on the Company's ability to continue as a going concern. If we conclude that a material uncertainty exists, we are required to draw attention in our auditor's report to the related disclosures in the financial statements or, if such disclosures are inadequate, to modify our opinion. Our conclusions are based on the audit evidence obtained up to the date of our auditor's report. However, future events or conditions may cause the Company to cease to continue as a going concern.evaluate the overall presentation, structure and contents of the financial statements, including the disclosures, and whether the financial statements represent the underlying transactions and events in a manner that gives a true and fair view.We communicate with those charged with governance regarding, among other matters, the planned scope and timing of the audit and significant audit findings, including any significant deficiencies in internal control that we identify during our audit.</arr:StatementOfAuditorsResponsibilityForAuditAndAuditPerformed>
+   <arr:StatementOnManagementsReviewAuditorsReportOnAuditedFinancialStatements contextRef="D0" xml:lang="en">Statement on the Management's reviewManagement is responsible for the Management's review.Our opinion on the financial statements does not cover the Management's review, and we do not express any form of assurance conclusion thereon.In connection with our audit of the financial statements, our responsibility is to read the Management's review and, in doing so, consider whether the Management's review is materially inconsistent with the financial statements or our knowledge obtained during the audit, or otherwise appears to be materially misstated.Moreover, it is our responsibility to consider whether the Management's review provides the information required under the Danish Financial Statements Act. Based on the work we have performed, we conclude that the Management's review is in accordance with the financial statements and has been prepared in accordance with the requirements of the Danish Financial Statement Act. We did not identify any material misstatement of the Management's review.</arr:StatementOnManagementsReviewAuditorsReportOnAuditedFinancialStatements>
+   <cmn:NameAndSurnameOfAuditor contextRef="D8">Kenn Wolff Hansen</cmn:NameAndSurnameOfAuditor>
+   <cmn:IdentificationNumberOfAuditor contextRef="D8">mne30154</cmn:IdentificationNumberOfAuditor>
+   <cmn:NameAndSurnameOfAuditor contextRef="D9">Andreas Windahl</cmn:NameAndSurnameOfAuditor>
+   <cmn:IdentificationNumberOfAuditor contextRef="D9">mne51550</cmn:IdentificationNumberOfAuditor>
+   <gsd:NameOfReportingEntity contextRef="D0">Maxi Zoo Denmark A/S</gsd:NameOfReportingEntity>
+   <gsd:AddressOfReportingEntityStreetName contextRef="D0">Industriparken </gsd:AddressOfReportingEntityStreetName>
+   <gsd:AddressOfReportingEntityStreetBuildingIdentifier contextRef="D0">21A, 3.</gsd:AddressOfReportingEntityStreetBuildingIdentifier>
+   <gsd:AddressOfReportingEntityPostCodeIdentifier contextRef="D0">DK-2750  </gsd:AddressOfReportingEntityPostCodeIdentifier>
+   <gsd:AddressOfReportingEntityDistrictName contextRef="D0">Ballerup</gsd:AddressOfReportingEntityDistrictName>
+   <gsd:TelephoneNumberOfReportingEntity contextRef="D0">70 25 21 07</gsd:TelephoneNumberOfReportingEntity>
+   <gsd:HomepageOfReportingEntity contextRef="D0">www.maxizoo.dk</gsd:HomepageOfReportingEntity>
+   <gsd:RegisteredOfficeOfReportingEntity contextRef="D0">Ballerup</gsd:RegisteredOfficeOfReportingEntity>
+   <fsa:Revenue contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">898981000</fsa:Revenue>
+   <fsa:Revenue contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">879860000</fsa:Revenue>
+   <fsa:Revenue contextRef="D11" decimals="-3" unitRef="U-iso4217-DKK">839184000</fsa:Revenue>
+   <fsa:Revenue contextRef="D12" decimals="-3" unitRef="U-iso4217-DKK">806846000</fsa:Revenue>
+   <fsa:Revenue contextRef="D13" decimals="-3" unitRef="U-iso4217-DKK">482375000</fsa:Revenue>
+   <fsa:GrossProfitLoss contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">264849000</fsa:GrossProfitLoss>
+   <fsa:GrossProfitLoss contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">241166000</fsa:GrossProfitLoss>
+   <fsa:GrossProfitLoss contextRef="D11" decimals="-3" unitRef="U-iso4217-DKK">233365000</fsa:GrossProfitLoss>
+   <fsa:GrossProfitLoss contextRef="D12" decimals="-3" unitRef="U-iso4217-DKK">219301000</fsa:GrossProfitLoss>
+   <fsa:GrossProfitLoss contextRef="D13" decimals="-3" unitRef="U-iso4217-DKK">119353000</fsa:GrossProfitLoss>
+   <fsa:ProfitLossFromOrdinaryOperatingActivities contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">35875000</fsa:ProfitLossFromOrdinaryOperatingActivities>
+   <fsa:ProfitLossFromOrdinaryOperatingActivities contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">26934000</fsa:ProfitLossFromOrdinaryOperatingActivities>
+   <fsa:ProfitLossFromOrdinaryOperatingActivities contextRef="D11" decimals="-3" unitRef="U-iso4217-DKK">37075000</fsa:ProfitLossFromOrdinaryOperatingActivities>
+   <fsa:ProfitLossFromOrdinaryOperatingActivities contextRef="D12" decimals="-3" unitRef="U-iso4217-DKK">28645000</fsa:ProfitLossFromOrdinaryOperatingActivities>
+   <fsa:ProfitLossFromOrdinaryOperatingActivities contextRef="D13" decimals="-3" unitRef="U-iso4217-DKK">17038000</fsa:ProfitLossFromOrdinaryOperatingActivities>
+   <fsa:ResultsFromNetFinancials contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">5327000</fsa:ResultsFromNetFinancials>
+   <fsa:ResultsFromNetFinancials contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">3844000</fsa:ResultsFromNetFinancials>
+   <fsa:ResultsFromNetFinancials contextRef="D11" decimals="-3" unitRef="U-iso4217-DKK">120000</fsa:ResultsFromNetFinancials>
+   <fsa:ResultsFromNetFinancials contextRef="D12" decimals="-3" unitRef="U-iso4217-DKK">-1044000</fsa:ResultsFromNetFinancials>
+   <fsa:ResultsFromNetFinancials contextRef="D13" decimals="-3" unitRef="U-iso4217-DKK">297000</fsa:ResultsFromNetFinancials>
+   <fsa:ProfitLoss contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">32258000</fsa:ProfitLoss>
+   <fsa:ProfitLoss contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">24227000</fsa:ProfitLoss>
+   <fsa:ProfitLoss contextRef="D11" decimals="-3" unitRef="U-iso4217-DKK">29655000</fsa:ProfitLoss>
+   <fsa:ProfitLoss contextRef="D12" decimals="-3" unitRef="U-iso4217-DKK">21336000</fsa:ProfitLoss>
+   <fsa:ProfitLoss contextRef="D13" decimals="-3" unitRef="U-iso4217-DKK">15475000</fsa:ProfitLoss>
+   <fsa:Assets contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">585208000</fsa:Assets>
+   <fsa:Assets contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">558719000</fsa:Assets>
+   <fsa:Assets contextRef="I2" decimals="-3" unitRef="U-iso4217-DKK">532225000</fsa:Assets>
+   <fsa:Assets contextRef="I3" decimals="-3" unitRef="U-iso4217-DKK">521975000</fsa:Assets>
+   <fsa:Assets contextRef="I4" decimals="-3" unitRef="U-iso4217-DKK">473078000</fsa:Assets>
+   <fsa:InvestmentInPropertyPlantAndEquipment contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">29242000</fsa:InvestmentInPropertyPlantAndEquipment>
+   <fsa:InvestmentInPropertyPlantAndEquipment contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">29844000</fsa:InvestmentInPropertyPlantAndEquipment>
+   <fsa:InvestmentInPropertyPlantAndEquipment contextRef="D11" decimals="-3" unitRef="U-iso4217-DKK">10907000</fsa:InvestmentInPropertyPlantAndEquipment>
+   <fsa:InvestmentInPropertyPlantAndEquipment contextRef="D12" decimals="-3" unitRef="U-iso4217-DKK">41913000</fsa:InvestmentInPropertyPlantAndEquipment>
+   <fsa:InvestmentInPropertyPlantAndEquipment contextRef="D13" decimals="-3" unitRef="U-iso4217-DKK">2679000</fsa:InvestmentInPropertyPlantAndEquipment>
+   <fsa:Equity contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">498146000</fsa:Equity>
+   <fsa:Equity contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">465888000</fsa:Equity>
+   <fsa:Equity contextRef="I2" decimals="-3" unitRef="U-iso4217-DKK">441661000</fsa:Equity>
+   <fsa:Equity contextRef="I3" decimals="-3" unitRef="U-iso4217-DKK">425306000</fsa:Equity>
+   <fsa:Equity contextRef="I4" decimals="-3" unitRef="U-iso4217-DKK">403970000</fsa:Equity>
+   <mrv:ReturnOnCapitalEmployed contextRef="D0" decimals="-3" unitRef="U-pure">74</mrv:ReturnOnCapitalEmployed>
+   <mrv:ReturnOnCapitalEmployed contextRef="D10" decimals="-3" unitRef="U-pure">60</mrv:ReturnOnCapitalEmployed>
+   <mrv:ReturnOnCapitalEmployed contextRef="D11" decimals="-3" unitRef="U-pure">87</mrv:ReturnOnCapitalEmployed>
+   <mrv:ReturnOnCapitalEmployed contextRef="D12" decimals="-3" unitRef="U-pure">70</mrv:ReturnOnCapitalEmployed>
+   <mrv:ReturnOnCapitalEmployed contextRef="D13" decimals="-3" unitRef="U-pure">70</mrv:ReturnOnCapitalEmployed>
+   <mrv:LiquidityRatio contextRef="D0" decimals="-3" unitRef="U-pure">4953</mrv:LiquidityRatio>
+   <mrv:LiquidityRatio contextRef="D10" decimals="-3" unitRef="U-pure">3305</mrv:LiquidityRatio>
+   <mrv:LiquidityRatio contextRef="D11" decimals="-3" unitRef="U-pure">2830</mrv:LiquidityRatio>
+   <mrv:LiquidityRatio contextRef="D12" decimals="-3" unitRef="U-pure">2178</mrv:LiquidityRatio>
+   <mrv:LiquidityRatio contextRef="D13" decimals="-3" unitRef="U-pure">7064</mrv:LiquidityRatio>
+   <mrv:EquityRatio contextRef="D0" decimals="-3" unitRef="U-pure">67</mrv:EquityRatio>
+   <mrv:EquityRatio contextRef="D10" decimals="-3" unitRef="U-pure">53</mrv:EquityRatio>
+   <mrv:EquityRatio contextRef="D11" decimals="-3" unitRef="U-pure">73</mrv:EquityRatio>
+   <mrv:EquityRatio contextRef="D12" decimals="-3" unitRef="U-pure">51</mrv:EquityRatio>
+   <mrv:EquityRatio contextRef="D13" decimals="-3" unitRef="U-pure">62</mrv:EquityRatio>
+   <mrv:SolvencyRatio contextRef="D0" decimals="-3" unitRef="U-pure">851</mrv:SolvencyRatio>
+   <mrv:SolvencyRatio contextRef="D10" decimals="-3" unitRef="U-pure">834</mrv:SolvencyRatio>
+   <mrv:SolvencyRatio contextRef="D11" decimals="-3" unitRef="U-pure">830</mrv:SolvencyRatio>
+   <mrv:SolvencyRatio contextRef="D12" decimals="-3" unitRef="U-pure">815</mrv:SolvencyRatio>
+   <mrv:SolvencyRatio contextRef="D13" decimals="-3" unitRef="U-pure">854</mrv:SolvencyRatio>
+   <fsa:AverageNumberOfEmployees contextRef="D0" decimals="-3" unitRef="U-pure">432000</fsa:AverageNumberOfEmployees>
+   <fsa:AverageNumberOfEmployees contextRef="D10" decimals="-3" unitRef="U-pure">423000</fsa:AverageNumberOfEmployees>
+   <fsa:AverageNumberOfEmployees contextRef="D11" decimals="-3" unitRef="U-pure">382000</fsa:AverageNumberOfEmployees>
+   <fsa:AverageNumberOfEmployees contextRef="D12" decimals="-3" unitRef="U-pure">396000</fsa:AverageNumberOfEmployees>
+   <fsa:AverageNumberOfEmployees contextRef="D13" decimals="-3" unitRef="U-pure">243000</fsa:AverageNumberOfEmployees>
+   <mrv:InformationOnCalculationOfKeyFiguresAndFinancialRatios contextRef="D0">The financial ratios have been calculated as follows:Return on invested capitalProfit/loss before financial income and expenses x 100 / Average invested capitalCurrent ratioCurrent assets x 100 / Current liabilitiesReturn on equityProfit/loss after tax x 100 / Average equitySolvency ratioEquity at year end x 100 / Total equity and liabilities at year end</mrv:InformationOnCalculationOfKeyFiguresAndFinancialRatios>
+   <mrv:DescriptionOfPrimaryActivitiesOfEntity contextRef="D0" xml:lang="en"> Principal activities                                   Maxi Zoo is Denmark´s leading pet retailer and part of the German Fressnapf Group. Fressnapf/Maxi Zoo are with more than 2.700 stores Europe´s largest chain of pet retailers.                                  Maxi Zoo Denmark had 74 stores located in all regions of the country and 1 online shop at the end of the year.</mrv:DescriptionOfPrimaryActivitiesOfEntity>
+   <mrv:DescriptionOfAnyUnusualMattersAffectingRecognitionOrMeasurement contextRef="D0" xml:lang="en"> Unusual circumstances                                   There have been no unusual circumstances which has influenced the result for the year.</mrv:DescriptionOfAnyUnusualMattersAffectingRecognitionOrMeasurement>
+   <mrv:DescriptionOfDevelopmentInActivitiesAndFinancialAffairs contextRef="D0" xml:lang="en"> Development in activities and financial position  Profit for the year (including comparison with forecasts previously announced)                                   The company consolidated its market position in 2024 with growth in turnover in the existing 70 stores.                                  In 2024 Maxi Zoo Denmark expanded with 4 new stores, so the total number of stores at the end of 2024 was 74 stores.                                  The company had a profit after tax of DKK 32.258 thousand in 2024 against DKK 24.227 thousand in 2023.                                  The expected growth in turnover from 2023 to 2024 was 7,4%, but due to a change in the customers trading patterns and decreasing dog population and later openings of new stores, the actual turnover growth was 2,2%.                                  The profit after tax in 2024 was higher then the expectation mentioned in the 2023 annual report, due to a change in the German Fressnapf Group transfer pricing setup, that resulted in a higher cash desk margin for Maxi Zoo Denmark, and thereby a higher profit after tax. Intellectual capital                                 Maxi Zoo always tries to optimize knowledge resources and recruit necessary qualifications. With help from local knowledge and knowledge within the German Fressnapf Group, the company constantly tries to stay updated and focus on key areas like advertising, product know-how and general market development.</mrv:DescriptionOfDevelopmentInActivitiesAndFinancialAffairs>
+   <mrv:DescriptionOfExpectedDevelopment contextRef="D0" xml:lang="en"> Outlook                                   Maxi Zoo expects that the pet market will be stable in the following years and thereby moderate growth of 6% is expected in 2025.                                  The net income is expected to be DKK 25.000 thousand in 2025.                                  Maxi Zoo has a goal to open more stores in the years to come.</mrv:DescriptionOfExpectedDevelopment>
+   <mrv:DescriptionOfResearchAndDevelopmentActivitiesInAndForReportingEntity contextRef="D0" xml:lang="en"> Research and development activities                                   The Company does not have any research and development projects but has been engaged in local development programs for overall R&amp;D activities of the Group.</mrv:DescriptionOfResearchAndDevelopmentActivitiesInAndForReportingEntity>
+   <mrv:EntitysObjectivesAndPolitiesForFinancialRiskManagement contextRef="D0" xml:lang="en"> Financial instruments  The Company's goals and policies for management of financial risks                                   The Company's activities are deemed not to be exposed to any special risks other than the usual risks in the industry. The Company does not engage in speculative foreign currency transactions.</mrv:EntitysObjectivesAndPolitiesForFinancialRiskManagement>
+   <mrv:DescriptionOfSignificantEventsOccurringAfterEndOfReportingPeriod contextRef="D0" xml:lang="en"> Events after the balance sheet date                                   No events materially affecting the assessment of the annual report have occurred after the balance sheet date.</mrv:DescriptionOfSignificantEventsOccurringAfterEndOfReportingPeriod>
+   <mrv:StatementOfCorporateSocialResponsibility contextRef="D0" xml:lang="en"> Statement on corporate social responsibility                                   Maxi Zoo Denmark A/S’ main activities are sales of pet food and pet accessories in Denmark.                                  The Company has no own research projects within human rights. The company has been engaged in local climate activities of the Group.                                  It’s Maxi Zoo Denmark A/S’ assessment that the business model does not have an environmental and climate impact. Therefore, Maxi Zoo Denmark A/S has not implemented any policies related to environment and climate.                                  As Maxi Zoo Denmark A/S’ primarily trades with Danish suppliers, and given the legislation that is in Denmark, Maxi Zoo Denmark A/S assess that risk related to anti-corruption and human rights is low, and therefore has not prepared a policy in this area. Social and employee staff matters                                   At Maxi Zoo Denmark A/S we value our employees and always ensure that their wellbeing and rights are a top priority. We offer education, competitive salaries and respect their right for collective agreement. Annually we conduct several workplace surveys both in the stores and at HQ to ensure the wellbeing of our employees.                                  The participation rate of the workplace survey for 2024 in the stores was 73% in June. At HQ it was 90% in March and 92% in August.                                  For 2025 we expect to continue our workspace survey during the year.                                  After careful consideration and performed risk assessment we have not identified any material risks to our business mode.                                  Maxi Zoo Denmark and the German Fressnapf Group are working on a more comprehensive ESG program for the future.</mrv:StatementOfCorporateSocialResponsibility>
+   <mrv:StatementOfTargetFiguresAndPoliciesForTheUnderrepresentedGender contextRef="D0" xml:lang="en">                                  The Board believes that its members should be elected on the basis of their combined qualifications and at the same time recognizes the advantages of a Board comprising a wide range of backgrounds such as global experience, style, culture and gender. To ensure we comply with our policy we have implemented the following actions:                                  - we always encourage all genders to apply for job postings. Supreme management body                                   On top management levels Maxi Zoo has achieved the goal of equal gender distribution according to the law, which is why no new targets has been set. The gender composition is 33,3% women and 66,6% men. Other management levels                                   For other management levels Maxi Zoo has also achieved the goal of equal gender distribution according to the law, which is why no new targets has been set. The gender composition is 40,0% women and 60,0% men.</mrv:StatementOfTargetFiguresAndPoliciesForTheUnderrepresentedGender>
+   <mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers contextRef="I0" decimals="-3" unitRef="U-xbrli-pure">6000</mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers>
+   <mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers contextRef="I1" decimals="-3" unitRef="U-xbrli-pure">6000</mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers>
+   <mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers contextRef="I2" decimals="-3" unitRef="U-xbrli-pure">6000</mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers>
+   <mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers contextRef="I3" decimals="-3" unitRef="U-xbrli-pure">5000</mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers>
+   <mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers contextRef="I4" decimals="-3" unitRef="U-xbrli-pure">0</mrv:TotalNumberOfMembersOfBoardOfDirectorsExcludingEmployeeelectedMembers>
+   <mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors contextRef="I0" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors>
+   <mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors contextRef="I1" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors>
+   <mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors contextRef="I2" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors>
+   <mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors contextRef="I3" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors>
+   <mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors contextRef="I4" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderBoardOfDirectors>
+   <mrv:TotalNumberOfOtherManagementLevels contextRef="I0" decimals="-3" unitRef="U-xbrli-pure">5000</mrv:TotalNumberOfOtherManagementLevels>
+   <mrv:TotalNumberOfOtherManagementLevels contextRef="I1" decimals="-3" unitRef="U-xbrli-pure">5000</mrv:TotalNumberOfOtherManagementLevels>
+   <mrv:TotalNumberOfOtherManagementLevels contextRef="I2" decimals="-3" unitRef="U-xbrli-pure">5000</mrv:TotalNumberOfOtherManagementLevels>
+   <mrv:TotalNumberOfOtherManagementLevels contextRef="I3" decimals="-3" unitRef="U-xbrli-pure">5000</mrv:TotalNumberOfOtherManagementLevels>
+   <mrv:TotalNumberOfOtherManagementLevels contextRef="I4" decimals="-3" unitRef="U-xbrli-pure">0</mrv:TotalNumberOfOtherManagementLevels>
+   <mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels contextRef="I0" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels>
+   <mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels contextRef="I1" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels>
+   <mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels contextRef="I2" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels>
+   <mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels contextRef="I3" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels>
+   <mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels contextRef="I4" decimals="-3" unitRef="U-pure">330</mrv:PercentageOfUnderrepresentedGenderOtherManagementLevels>
+   <mrv:StatementOfPolicyForDataEthics contextRef="D0" xml:lang="en"> Statement on data ethics                                   Our policy for data ethics consists of:                                  - All data is stored in cloud solutions protected by GDPR requirement.                                  - Collection of all data through internal platforms or external partners is only used internally.                                  - If sharing data with third parties, a data processing agreement will be required.                                  - All employees handling data receive ongoing training and education.                                  Every employee with a status of manager is trained in our use of data and is therefore responsible for sharing correct data ethics. All decisions regarding data ethics and new system development are anchored within our corporate management, lead by our head of IT/data. We constantly monitor potential cyber risks in relation to the collection of data. In the case where risks are identified, Management is notified, and sufficient actions are implemented.</mrv:StatementOfPolicyForDataEthics>
+   <fsa:Revenue contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">898981000</fsa:Revenue>
+   <fsa:Revenue contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">879860000</fsa:Revenue>
+   <fsa:ChangeInInventoriesOfFinishedGoodsWorkInProgressAndGoodsForResale contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">538219000</fsa:ChangeInInventoriesOfFinishedGoodsWorkInProgressAndGoodsForResale>
+   <fsa:ChangeInInventoriesOfFinishedGoodsWorkInProgressAndGoodsForResale contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">526670000</fsa:ChangeInInventoriesOfFinishedGoodsWorkInProgressAndGoodsForResale>
+   <fsa:OtherOperatingIncome contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">34362000</fsa:OtherOperatingIncome>
+   <fsa:OtherOperatingIncome contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">23485000</fsa:OtherOperatingIncome>
+   <fsa:OtherExternalExpenses contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">130275000</fsa:OtherExternalExpenses>
+   <fsa:OtherExternalExpenses contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">135509000</fsa:OtherExternalExpenses>
+   <fsa:GrossProfitLoss contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">264849000</fsa:GrossProfitLoss>
+   <fsa:GrossProfitLoss contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">241166000</fsa:GrossProfitLoss>
+   <fsa:EmployeeBenefitsExpense contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">178921000</fsa:EmployeeBenefitsExpense>
+   <fsa:EmployeeBenefitsExpense contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">168768000</fsa:EmployeeBenefitsExpense>
+   <fsa:DepreciationAmortisationExpenseAndImpairmentLossesOfPropertyPlantAndEquipmentAndIntangibleAssetsRecognisedInProfitOrLoss contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">50032000</fsa:DepreciationAmortisationExpenseAndImpairmentLossesOfPropertyPlantAndEquipmentAndIntangibleAssetsRecognisedInProfitOrLoss>
+   <fsa:DepreciationAmortisationExpenseAndImpairmentLossesOfPropertyPlantAndEquipmentAndIntangibleAssetsRecognisedInProfitOrLoss contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">45464000</fsa:DepreciationAmortisationExpenseAndImpairmentLossesOfPropertyPlantAndEquipmentAndIntangibleAssetsRecognisedInProfitOrLoss>
+   <fsa:OtherOperatingExpenses contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">21000</fsa:OtherOperatingExpenses>
+   <fsa:OtherOperatingExpenses contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:OtherOperatingExpenses>
+   <fsa:ProfitLossFromOrdinaryOperatingActivitiesBeforeGainsLossesFromFairValueAdjustments contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">35875000</fsa:ProfitLossFromOrdinaryOperatingActivitiesBeforeGainsLossesFromFairValueAdjustments>
+   <fsa:ProfitLossFromOrdinaryOperatingActivitiesBeforeGainsLossesFromFairValueAdjustments contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">26934000</fsa:ProfitLossFromOrdinaryOperatingActivitiesBeforeGainsLossesFromFairValueAdjustments>
+   <fsa:OtherFinanceIncome contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">6132000</fsa:OtherFinanceIncome>
+   <fsa:OtherFinanceIncome contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">4383000</fsa:OtherFinanceIncome>
+   <fsa:OtherFinanceExpenses contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">805000</fsa:OtherFinanceExpenses>
+   <fsa:OtherFinanceExpenses contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">539000</fsa:OtherFinanceExpenses>
+   <fsa:ProfitLossFromOrdinaryActivitiesBeforeTax contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">41202000</fsa:ProfitLossFromOrdinaryActivitiesBeforeTax>
+   <fsa:ProfitLossFromOrdinaryActivitiesBeforeTax contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">30778000</fsa:ProfitLossFromOrdinaryActivitiesBeforeTax>
+   <fsa:TaxExpense contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">8944000</fsa:TaxExpense>
+   <fsa:TaxExpense contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">6551000</fsa:TaxExpense>
+   <fsa:ProfitLoss contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">32258000</fsa:ProfitLoss>
+   <fsa:ProfitLoss contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">24227000</fsa:ProfitLoss>
+   <fsa:AcquiredIntangibleAssets contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">2389000</fsa:AcquiredIntangibleAssets>
+   <fsa:AcquiredIntangibleAssets contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:AcquiredIntangibleAssets>
+   <fsa:Goodwill contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">178147000</fsa:Goodwill>
+   <fsa:Goodwill contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:Goodwill>
+   <fsa:FixturesFittingsToolsAndEquipment contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">33711000</fsa:FixturesFittingsToolsAndEquipment>
+   <fsa:FixturesFittingsToolsAndEquipment contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:FixturesFittingsToolsAndEquipment>
+   <fsa:LeaseholdImprovements contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">31216000</fsa:LeaseholdImprovements>
+   <fsa:LeaseholdImprovements contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:LeaseholdImprovements>
+   <fsa:DepositsLongtermInvestmentsAndReceivables contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">8745000</fsa:DepositsLongtermInvestmentsAndReceivables>
+   <fsa:DepositsLongtermInvestmentsAndReceivables contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:DepositsLongtermInvestmentsAndReceivables>
+   <fsa:ManufacturedGoodsAndGoodsForResale contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">97801000</fsa:ManufacturedGoodsAndGoodsForResale>
+   <fsa:ManufacturedGoodsAndGoodsForResale contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ManufacturedGoodsAndGoodsForResale>
+   <fsa:ShorttermTradeReceivables contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">15271000</fsa:ShorttermTradeReceivables>
+   <fsa:ShorttermTradeReceivables contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ShorttermTradeReceivables>
+   <fsa:ShorttermReceivablesFromGroupEnterprises contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">145110000</fsa:ShorttermReceivablesFromGroupEnterprises>
+   <fsa:ShorttermReceivablesFromGroupEnterprises contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ShorttermReceivablesFromGroupEnterprises>
+   <fsa:OtherShorttermReceivables contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">8577000</fsa:OtherShorttermReceivables>
+   <fsa:OtherShorttermReceivables contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:OtherShorttermReceivables>
+   <fsa:DeferredIncomeAssets contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">3256000</fsa:DeferredIncomeAssets>
+   <fsa:DeferredIncomeAssets contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:DeferredIncomeAssets>
+   <fsa:CashAndCashEquivalents contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">60985000</fsa:CashAndCashEquivalents>
+   <fsa:CashAndCashEquivalents contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">74238000</fsa:CashAndCashEquivalents>
+   <fsa:Assets contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">585208000</fsa:Assets>
+   <fsa:Assets contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">558719000</fsa:Assets>
+   <fsa:ContributedCapital contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">1050000</fsa:ContributedCapital>
+   <fsa:ContributedCapital contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">1050000</fsa:ContributedCapital>
+   <fsa:RetainedEarnings contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">468096000</fsa:RetainedEarnings>
+   <fsa:RetainedEarnings contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">464838000</fsa:RetainedEarnings>
+   <fsa:ProposedDividendRecognisedInEquity contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">29000000</fsa:ProposedDividendRecognisedInEquity>
+   <fsa:ProposedDividendRecognisedInEquity contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ProposedDividendRecognisedInEquity>
+   <fsa:Equity contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">498146000</fsa:Equity>
+   <fsa:Equity contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">465888000</fsa:Equity>
+   <fsa:DeferredTaxLiabilitiesLongterm contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">11750000</fsa:DeferredTaxLiabilitiesLongterm>
+   <fsa:DeferredTaxLiabilitiesLongterm contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">6943000</fsa:DeferredTaxLiabilitiesLongterm>
+   <fsa:OtherProvisionsLiabilitiesLongterm contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">8484000</fsa:OtherProvisionsLiabilitiesLongterm>
+   <fsa:OtherProvisionsLiabilitiesLongterm contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:OtherProvisionsLiabilitiesLongterm>
+   <fsa:Provisions contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">20234000</fsa:Provisions>
+   <fsa:Provisions contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">6943000</fsa:Provisions>
+   <fsa:ShorttermTradePayables contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">12883000</fsa:ShorttermTradePayables>
+   <fsa:ShorttermTradePayables contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">36633000</fsa:ShorttermTradePayables>
+   <fsa:ShorttermPayablesToGroupEnterprises contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">16501000</fsa:ShorttermPayablesToGroupEnterprises>
+   <fsa:ShorttermPayablesToGroupEnterprises contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ShorttermPayablesToGroupEnterprises>
+   <fsa:ShorttermTaxPayables contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">2544000</fsa:ShorttermTaxPayables>
+   <fsa:ShorttermTaxPayables contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">3063000</fsa:ShorttermTaxPayables>
+   <fsa:OtherPayablesIncludingTaxPayablesLiabilitiesOtherThanProvisionsShortterm contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">29553000</fsa:OtherPayablesIncludingTaxPayablesLiabilitiesOtherThanProvisionsShortterm>
+   <fsa:OtherPayablesIncludingTaxPayablesLiabilitiesOtherThanProvisionsShortterm contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">32411000</fsa:OtherPayablesIncludingTaxPayablesLiabilitiesOtherThanProvisionsShortterm>
+   <fsa:ShorttermDeferredIncome contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">5347000</fsa:ShorttermDeferredIncome>
+   <fsa:ShorttermDeferredIncome contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">13781000</fsa:ShorttermDeferredIncome>
+   <fsa:ShorttermLiabilitiesOtherThanProvisions contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">66828000</fsa:ShorttermLiabilitiesOtherThanProvisions>
+   <fsa:ShorttermLiabilitiesOtherThanProvisions contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">85888000</fsa:ShorttermLiabilitiesOtherThanProvisions>
+   <fsa:LiabilitiesOtherThanProvisions contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">66828000</fsa:LiabilitiesOtherThanProvisions>
+   <fsa:LiabilitiesOtherThanProvisions contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">85888000</fsa:LiabilitiesOtherThanProvisions>
+   <fsa:LiabilitiesAndEquity contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">585208000</fsa:LiabilitiesAndEquity>
+   <fsa:LiabilitiesAndEquity contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">558719000</fsa:LiabilitiesAndEquity>
+   <fsa:Equity contextRef="I5" decimals="-3" unitRef="U-iso4217-DKK">1050000</fsa:Equity>
+   <fsa:Equity contextRef="I6" decimals="-3" unitRef="U-iso4217-DKK">464838000</fsa:Equity>
+   <fsa:Equity contextRef="I7" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:Equity>
+   <fsa:ProfitLoss contextRef="D14" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ProfitLoss>
+   <fsa:ProfitLoss contextRef="D15" decimals="-3" unitRef="U-iso4217-DKK">3258000</fsa:ProfitLoss>
+   <fsa:ProfitLoss contextRef="D16" decimals="-3" unitRef="U-iso4217-DKK">29000000</fsa:ProfitLoss>
+   <fsa:Equity contextRef="I8" decimals="-3" unitRef="U-iso4217-DKK">1050000</fsa:Equity>
+   <fsa:Equity contextRef="I9" decimals="-3" unitRef="U-iso4217-DKK">468096000</fsa:Equity>
+   <fsa:Equity contextRef="I10" decimals="-3" unitRef="U-iso4217-DKK">29000000</fsa:Equity>
+   <fsa:DisclosureOfAccountingPolicies contextRef="D0" xml:lang="en">The annual report of Maxi Zoo Denmark A/S for 2024 has been prepared in accordance with the provisions applying to reporting class C large entities under the Danish Financial Statements Act.The accounting policies used in the preparation of the financial statements are consistent with those of last year.ReclassificationsReferring to the true and fair view set out in the Danish Financial Statements Act, the Company has reclassified individual items in the staff costs note. The reclassifications have affected the items wages and salaries and pensions but have not affected results before tax, results for the year or equity. Comparative figures have been restated accordingly.</fsa:DisclosureOfAccountingPolicies>
+   <fsa:ExplanationOfNotDisclosingCashFlowsStatements contextRef="D0" xml:lang="en">Omission of cash flow statementPursuant to section 86(4) of the Danish Financial Statements Act, no cash flow statement has been prepared. The Company's cash flows are included in the cash flow statement in the consolidated financial statements of Fressnapf Beteiligungs GmbH.</fsa:ExplanationOfNotDisclosingCashFlowsStatements>
+   <fsa:DescriptionOfMethodsOfForeignCurrencies contextRef="D0" xml:lang="en"> Foreign currency translation On initial recognition, transactions denominated in foreign currencies are translated at the exchange rates at the transaction date. Foreign exchange differences arising between the exchange rates at the transaction date and the date of payment are recognised in the income statement as financial income or financial expenses.  Receivables, payables and other monetary items denominated in foreign currencies are translated at the exchange rates at the balance sheet date. The difference between the exchange rates at the balance sheet date and the date at which the receivable or payable arose or was recognised in the latest financial statements is recognised in the income statement as financial income or financial expenses.</fsa:DescriptionOfMethodsOfForeignCurrencies>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfRevenue contextRef="D0" xml:lang="en"> Revenue Income from the sale of goods is recognised in revenue when delivery and transfer of risk to the buyer have taken place, and the income may be measured reliably and is expected to be received. The date of transfer of the most significant benefits and risks is determined using standard Incoterms ® 2020.  Revenue is measured at the fair value of the agreed consideration excluding VAT and taxes charged on behalf of third parties. All discounts granted are deducted from revenue.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfRevenue>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfCostOfSales contextRef="D0" xml:lang="en"> Cost of sales  Cost of sales comprises costs incurred to generate revenue for the year. This item also comprises direct costs for goods for resale and changes to inventory of goods for resale.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfCostOfSales>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfOtherOperatingIncome contextRef="D0" xml:lang="en"> Other operating income  Other operating income comprises items secondary to the activities of the Company, including gains on the disposal of intangible assets and property, plant and equipment.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfOtherOperatingIncome>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfExternalExpenses contextRef="D0" xml:lang="en"> Other external costs  External costs comprise expenses related to distribution, sale, advertising, administration, premises, bad debts, operating lease payments, etc.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfExternalExpenses>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfEmployeeBenefitExpense contextRef="D0" xml:lang="en"> Staff costs  Staff costs comprise wages and salaries, including holiday allowance, pension and other social security costs, etc., to the Company's employees.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfEmployeeBenefitExpense>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfOtherOperatingExpenses contextRef="D0" xml:lang="en"> Other operating costs  Other operating costs comprise items secondary to the activities of the entities, including losses on the disposal of intangible assets and property, plant and equipment.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfOtherOperatingExpenses>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfFinanceIncomeAndExpenses contextRef="D0" xml:lang="en"> Financial income and expenses  Financial income and expenses comprise interest income and expense, gains and losses on payables and transactions denominated in foreign currencies as well as surcharges and refunds under the on-account tax scheme, etc.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfFinanceIncomeAndExpenses>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfTaxExpenses contextRef="D0" xml:lang="en"> Tax on profit for the year  Tax for the year consists of current tax for the year and deferred tax for the year. The tax attributable to the profit for the year is recognised in the income statement, whereas the tax attributable to equity transactions is recognised directly in equity.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfTaxExpenses>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfIntangibleAssets contextRef="D0" xml:lang="en">                  Intangible assets                  Patents, licences and trademarks                  Software is measured at cost less accumulated amortisation. Software is amortised on a straight-line basis over the estimated useful life. The amortisation period is estimated to 3 years.                  Goodwill                   Goodwill is amortised on a straight-line basis over the estimated useful life determined on the basis of Management's experience within the individual business areas. The amortisation period is 10 years.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfIntangibleAssets>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfPropertyPlantAndEquipment contextRef="D0" xml:lang="en">Property, plant and equipmentFixtures and fittings, tools and equipment and leasehold improvements are measured at cost less accumulated depreciation and impairment losses.Cost comprises the purchase price and any costs directly attributable to the acquisition until the date on which the asset is available for use. Indirect production overheads and borrowing costs are not recognised in cost.Where individual components of an item of property, plant and equipment have different useful lives, they are accounted for as separate items, which are depreciated separately.The basis of depreciation is cost less any projected residual value after the end of the useful life. Depreciation is provided on a straight-line basis over the estimated useful life. The estimated useful lives are as follows:Fixtures and fittings, tools and equipment5 yearsLeasehold improve­ments5 yearsThe useful life and residual value are reassessed annually. Changes are treated as accounting estimates, and the effect on depreciation is recognised prospectively. Gains and losses on the disposal of property, plant and equipment are stated as the difference between the selling price less selling costs and the carrying amount at the date of disposal. Gains and losses are recognised in the income statement as other operating income or other operating costs, respectively.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfPropertyPlantAndEquipment>
+   <fsa:DescriptionOfMethodsOfLeases contextRef="D0" xml:lang="en"> Leases  All other leases are accounted for as operating leases. Payments relating to operating leases and other leases are recognised in the income statement over the term of the lease. The Company's total obligation relating to operating leases and other leases is disclosed as contractual obligations and contingencies, etc.</fsa:DescriptionOfMethodsOfLeases>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisForInvestmentsInSubsidiariesAndAssociates contextRef="D0" xml:lang="en"> Financial assets  Deposits are recognised at cost.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisForInvestmentsInSubsidiariesAndAssociates>
+   <fsa:DescriptionOfMethodsOfAmortisationOfNoncurrentAssets contextRef="D0" xml:lang="en"> Impairment of fixed assets The carrying amount of intangible assets, property, plant and equipment and financial assets is subject to an annual test for indications of impairment other than the decrease in value reflected by amortisation or depreciation. Impairment tests are conducted of individual assets or groups of assets when there is an indication that they may be impaired. Write-down is made to the recoverable amount if this is lower than the carrying amount.  The recoverable amount is the higher of an asset's net selling price and its value in use. The value in use is determined as the present value of the forecast net cash flows from the use of the asset or the group of assets, including forecast net cash flows from the disposal of the asset or the group of assets after the end of the useful life.</fsa:DescriptionOfMethodsOfAmortisationOfNoncurrentAssets>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfInventories contextRef="D0" xml:lang="en"> Inventories Inventories are measured at cost in accordance with the FIFO method. Where the net realisable value is lower than cost, inventories are written down to this lower value. Goods for resale and raw materials and consumables are measured at cost, comprising purchase price plus delivery costs.  The net realisable value of inventories is calculated as the sales amount less costs of completion and costs necessary to make the sale and is determined taking into account marketability, obsolescence and development in expected selling price.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfInventories>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfReceivables contextRef="D0" xml:lang="en"> Receivables Receivables are measured at amortised cost. Write-down is made for bad debt losses where there is an objective indication that a receivable has been impaired. If there is an objective indication that an individual receivable has been impaired, write-down is made on an individual basis.  Write-downs are calculated as the difference between the carrying amount of receivables and the present value of forecast cash flows, including the realisable value of any collateral received. The effective interest rate for the individual receivable or portfolio is used as discount rate.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfReceivables>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfDeferredIncomeAssets contextRef="D0" xml:lang="en"> Prepayments  Prepayments comprise prepayment of costs incurred relating to subsequent financial years.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfDeferredIncomeAssets>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfCashAndCashEquivalents contextRef="D0" xml:lang="en"> Cash at bank and in hand  Cash at bank and in hand comprise cash and bank deposits.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfCashAndCashEquivalents>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfProvisions contextRef="D0" xml:lang="en"> Provisions  Provisions comprise costs related to restructuring obligations. Provisions are recognised when, as a result of past events, the Company has a legal or a constructive obligation, and it is probable that there may be outflow of resources embodying economic benefits to settle the obligation. Provisions are measured at the present value of the expenditures expected to be required to settle the obligation.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfProvisions>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfTaxPayablesAndDeferredTax contextRef="D0" xml:lang="en"> Corporation tax and deferred tax Current tax payable and receivable is recognised in the balance sheet as tax computed on the taxable income for the year, adjusted for tax on the taxable income of prior years and for tax paid on account. Deferred tax is measured using the balance sheet liability method on all temporary differences between the carrying amount and the tax value of assets and liabilities measured on the planned use of the asset or settlement of the liability, respectively. However, deferred tax is not recognised on temporary differences relating to office buildings non-deductible for tax purposes and other items where temporary differences arise at the date of acquisition without affecting either profit/loss or taxable income. Deferred tax assets, including the tax value of tax loss carryforwards, are recognised at the expected value of their utilisation within the foreseeable future; either as a set-off against tax on future income or as a set-off against deferred tax liabilities in the same legal tax entity. Any deferred net assets are measured at net realisable value.  Deferred tax is measured in accordance with the tax rules and at the tax rates applicable at the balance sheet date when the deferred tax is expected to crystallise as current tax. Changes in deferred tax as a result of changes in tax rates are recognised in the income statement or equity, respectively.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfTaxPayablesAndDeferredTax>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfLiabilitiesOtherThanProvisions contextRef="D0" xml:lang="en"> Liabilities other than provisions  Liabilities are measured at amortised cost.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfLiabilitiesOtherThanProvisions>
+   <fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfDeferredIncomeLiabilities contextRef="D0" xml:lang="en"> Deferred income  Deferred income comprises advance invoicing regarding income in subsequent years.</fsa:DescriptionOfMethodsOfRecognitionAndMeasurementBasisOfDeferredIncomeLiabilities>
+   <fsa:InformationOnSegments contextRef="D0" xml:lang="en"> Information on segments and geographical segments is based on the Company's risks and returns and its internal financial reporting system. The operations are managed as one segment or strategic unit, because it offers similar products in similar markets, and the factors determining strategic decisions are comparable for all products.  Product segments are not disclosed in line with section 96 of the Danish Financial Statements Act, as Management assesses it will be detrimental to the Company.</fsa:InformationOnSegments>
+   <fsa:InformationOnOperatingSegmentsAndGeographicalMarkets contextRef="D0" xml:lang="en">Activities - primary segment                                            DenmarkRevenue898,931Revenue879,860</fsa:InformationOnOperatingSegmentsAndGeographicalMarkets>
+   <fsa:AuditorsFees contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">652000</fsa:AuditorsFees>
+   <fsa:AuditorsFees contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">627000</fsa:AuditorsFees>
+   <fsa:FeesForAuditorsPerformingStatutoryAudit contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">536000</fsa:FeesForAuditorsPerformingStatutoryAudit>
+   <fsa:FeesForAuditorsPerformingStatutoryAudit contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">513000</fsa:FeesForAuditorsPerformingStatutoryAudit>
+   <fsa:FeesForAuditorsPerformingTaxConsultancy contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">66000</fsa:FeesForAuditorsPerformingTaxConsultancy>
+   <fsa:FeesForAuditorsPerformingTaxConsultancy contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">65000</fsa:FeesForAuditorsPerformingTaxConsultancy>
+   <fsa:FeesForOtherServicesPerformedByAuditors contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">50000</fsa:FeesForOtherServicesPerformedByAuditors>
+   <fsa:FeesForOtherServicesPerformedByAuditors contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">49000</fsa:FeesForOtherServicesPerformedByAuditors>
+   <fsa:WagesAndSalaries contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">161711000</fsa:WagesAndSalaries>
+   <fsa:WagesAndSalaries contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">153426000</fsa:WagesAndSalaries>
+   <fsa:PostemploymentBenefitExpense contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">13781000</fsa:PostemploymentBenefitExpense>
+   <fsa:PostemploymentBenefitExpense contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">12214000</fsa:PostemploymentBenefitExpense>
+   <fsa:SocialSecurityContributions contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">3429000</fsa:SocialSecurityContributions>
+   <fsa:SocialSecurityContributions contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">3128000</fsa:SocialSecurityContributions>
+   <fsa:AverageNumberOfEmployees contextRef="D0" decimals="0" unitRef="U-pure">432</fsa:AverageNumberOfEmployees>
+   <fsa:AverageNumberOfEmployees contextRef="D10" decimals="0" unitRef="U-pure">423</fsa:AverageNumberOfEmployees>
+   <fsa:InterestIncomeFromGroupEnterprises contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">-5014000</fsa:InterestIncomeFromGroupEnterprises>
+   <fsa:InterestIncomeFromGroupEnterprises contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">-2989000</fsa:InterestIncomeFromGroupEnterprises>
+   <fsa:OtherAdjustmentsOfFinanceIncome contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">-1118000</fsa:OtherAdjustmentsOfFinanceIncome>
+   <fsa:OtherAdjustmentsOfFinanceIncome contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">-1394000</fsa:OtherAdjustmentsOfFinanceIncome>
+   <fsa:InterestExpenseAssignedToGroupEnterprises contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">61000</fsa:InterestExpenseAssignedToGroupEnterprises>
+   <fsa:InterestExpenseAssignedToGroupEnterprises contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:InterestExpenseAssignedToGroupEnterprises>
+   <fsa:OtherAdjustmentsOfFinanceExpenses contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">744000</fsa:OtherAdjustmentsOfFinanceExpenses>
+   <fsa:OtherAdjustmentsOfFinanceExpenses contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">539000</fsa:OtherAdjustmentsOfFinanceExpenses>
+   <fsa:CurrentTaxExpense contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">4137000</fsa:CurrentTaxExpense>
+   <fsa:CurrentTaxExpense contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">4104000</fsa:CurrentTaxExpense>
+   <fsa:AdjustmentsForDeferredTax contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">4807000</fsa:AdjustmentsForDeferredTax>
+   <fsa:AdjustmentsForDeferredTax contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">2450000</fsa:AdjustmentsForDeferredTax>
+   <fsa:AdjustmentsForDeferredTaxOfPriorPeriod contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:AdjustmentsForDeferredTaxOfPriorPeriod>
+   <fsa:AdjustmentsForDeferredTaxOfPriorPeriod contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">-3000</fsa:AdjustmentsForDeferredTaxOfPriorPeriod>
+   <fsa:ProposedDividendRecognisedInEquity contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">29000000</fsa:ProposedDividendRecognisedInEquity>
+   <fsa:ProposedDividendRecognisedInEquity contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ProposedDividendRecognisedInEquity>
+   <fsa:TransferredToFromRetainedEarnings contextRef="D0" decimals="-3" unitRef="U-iso4217-DKK">3258000</fsa:TransferredToFromRetainedEarnings>
+   <fsa:TransferredToFromRetainedEarnings contextRef="D10" decimals="-3" unitRef="U-iso4217-DKK">24227000</fsa:TransferredToFromRetainedEarnings>
+   <fsa:IntangibleAssetsGross contextRef="I11" decimals="-3" unitRef="U-iso4217-DKK">9496000</fsa:IntangibleAssetsGross>
+   <fsa:IntangibleAssetsGross contextRef="I12" decimals="-3" unitRef="U-iso4217-DKK">296540000</fsa:IntangibleAssetsGross>
+   <fsa:IntangibleAssetsGross contextRef="I13" decimals="-3" unitRef="U-iso4217-DKK">9496000</fsa:IntangibleAssetsGross>
+   <fsa:IntangibleAssetsGross contextRef="I14" decimals="-3" unitRef="U-iso4217-DKK">296540000</fsa:IntangibleAssetsGross>
+   <fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets contextRef="I11" decimals="-3" unitRef="U-iso4217-DKK">-5402000</fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets>
+   <fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets contextRef="I12" decimals="-3" unitRef="U-iso4217-DKK">-88759000</fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets>
+   <fsa:AmortisationOfIntangibleAssets contextRef="D17" decimals="-3" unitRef="U-iso4217-DKK">-1705000</fsa:AmortisationOfIntangibleAssets>
+   <fsa:AmortisationOfIntangibleAssets contextRef="D18" decimals="-3" unitRef="U-iso4217-DKK">-29634000</fsa:AmortisationOfIntangibleAssets>
+   <fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets contextRef="I13" decimals="-3" unitRef="U-iso4217-DKK">-7107000</fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets>
+   <fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets contextRef="I14" decimals="-3" unitRef="U-iso4217-DKK">-118393000</fsa:AccumulatedImpairmentLossesAndAmortisationOfIntangibleAssets>
+   <fsa:IntangibleAssets contextRef="I13" decimals="-3" unitRef="U-iso4217-DKK">2389000</fsa:IntangibleAssets>
+   <fsa:IntangibleAssets contextRef="I14" decimals="-3" unitRef="U-iso4217-DKK">178147000</fsa:IntangibleAssets>
+   <fsa:PropertyPlantAndEquipmentGross contextRef="I15" decimals="-3" unitRef="U-iso4217-DKK">155258000</fsa:PropertyPlantAndEquipmentGross>
+   <fsa:PropertyPlantAndEquipmentGross contextRef="I16" decimals="-3" unitRef="U-iso4217-DKK">24997000</fsa:PropertyPlantAndEquipmentGross>
+   <fsa:AdditionsToPropertyPlantAndEquipment contextRef="D19" decimals="-3" unitRef="U-iso4217-DKK">15109000</fsa:AdditionsToPropertyPlantAndEquipment>
+   <fsa:AdditionsToPropertyPlantAndEquipment contextRef="D20" decimals="-3" unitRef="U-iso4217-DKK">14133000</fsa:AdditionsToPropertyPlantAndEquipment>
+   <fsa:DisposalsOfPropertyPlantAndEquipment contextRef="D19" decimals="-3" unitRef="U-iso4217-DKK">-139000</fsa:DisposalsOfPropertyPlantAndEquipment>
+   <fsa:DisposalsOfPropertyPlantAndEquipment contextRef="D20" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:DisposalsOfPropertyPlantAndEquipment>
+   <fsa:PropertyPlantAndEquipmentGross contextRef="I17" decimals="-3" unitRef="U-iso4217-DKK">170228000</fsa:PropertyPlantAndEquipmentGross>
+   <fsa:PropertyPlantAndEquipmentGross contextRef="I18" decimals="-3" unitRef="U-iso4217-DKK">39130000</fsa:PropertyPlantAndEquipmentGross>
+   <fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment contextRef="I15" decimals="-3" unitRef="U-iso4217-DKK">-123160000</fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment>
+   <fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment contextRef="I16" decimals="-3" unitRef="U-iso4217-DKK">-2578000</fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment>
+   <fsa:DepreciationOfPropertyPlantAndEquipment contextRef="D19" decimals="-3" unitRef="U-iso4217-DKK">-13357000</fsa:DepreciationOfPropertyPlantAndEquipment>
+   <fsa:DepreciationOfPropertyPlantAndEquipment contextRef="D20" decimals="-3" unitRef="U-iso4217-DKK">-5336000</fsa:DepreciationOfPropertyPlantAndEquipment>
+   <fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment contextRef="I17" decimals="-3" unitRef="U-iso4217-DKK">-136517000</fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment>
+   <fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment contextRef="I18" decimals="-3" unitRef="U-iso4217-DKK">-7914000</fsa:AccumulatedImpairmentLossesAndDepreciationOfPropertyPlantAndEquipment>
+   <fsa:PropertyPlantAndEquipment contextRef="I17" decimals="-3" unitRef="U-iso4217-DKK">33711000</fsa:PropertyPlantAndEquipment>
+   <fsa:PropertyPlantAndEquipment contextRef="I18" decimals="-3" unitRef="U-iso4217-DKK">31216000</fsa:PropertyPlantAndEquipment>
+   <fsa:InvestmentsGross contextRef="I19" decimals="-3" unitRef="U-iso4217-DKK">8507000</fsa:InvestmentsGross>
+   <fsa:AdditionsToInvestments contextRef="D21" decimals="-3" unitRef="U-iso4217-DKK">238000</fsa:AdditionsToInvestments>
+   <fsa:InvestmentsGross contextRef="I20" decimals="-3" unitRef="U-iso4217-DKK">8745000</fsa:InvestmentsGross>
+   <fsa:LongtermInvestmentsAndReceivables contextRef="I20" decimals="-3" unitRef="U-iso4217-DKK">8745000</fsa:LongtermInvestmentsAndReceivables>
+   <fsa:ExplanationOfPrepayments contextRef="D0" xml:lang="en"> 
+                                           Insurance786259 
+                                           Rental cost1,678990 
+                                           IT cost68357 
+                                           Other prepayments1091,174</fsa:ExplanationOfPrepayments>
+   <fsa:DisclosureOfContributedCapital contextRef="D0" xml:lang="en">Contributed capital consists of:1050000 shares of nom. DKK 1.All shares rank equally.The share capital remains unchanged for the past five fiscal years.</fsa:DisclosureOfContributedCapital>
+   <fsa:ProvisionsForDeferredTax contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">6943000</fsa:ProvisionsForDeferredTax>
+   <fsa:ProvisionsForDeferredTax contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:ProvisionsForDeferredTax>
+   <fsa:DeferredTaxRecognisedInIncomeStatement contextRef="I0" decimals="-3" unitRef="U-iso4217-DKK">4807000</fsa:DeferredTaxRecognisedInIncomeStatement>
+   <fsa:DeferredTaxRecognisedInIncomeStatement contextRef="I1" decimals="-3" unitRef="U-iso4217-DKK">0</fsa:DeferredTaxRecognisedInIncomeStatement>
+   <fsa:DisclosureOfOtherProvisions contextRef="D0" xml:lang="en">DKK'00031/12 202431/12 2023Other provisions at 1 January 202400Provisions for the year8,4840Other provisions at 31 December 20248,4840</fsa:DisclosureOfOtherProvisions>
+   <fsa:DisclosureOfDeferredIncome contextRef="D0" xml:lang="en"> 
+                                           Deferred income recognised under current liabilities, DKK 5,347 thousand (2023: DKK 13,781 thousand), consists of rental contributions as well as giftcards and vouchers.</fsa:DisclosureOfDeferredIncome>
+   <fsa:DisclosureOfContingentLiabilities contextRef="D0" xml:lang="en">Contingent liabilitiesThe Company's bank has issued guarantees for a total amount of DKK 14,016 thousand (2023: DKK 20,150 thousand) instead of rent deposits to a third party.Lease obligations (operating leases) falling due within 10 years total DKK 270,833 thousand (2023: DKK 203,778 thousand).A Company guarantee of DKK 3.000 thousand has been granted to the Company's bank. At year-end, the bank facility is unused (2023: DKK 3,000 thousand).</fsa:DisclosureOfContingentLiabilities>
+   <fsa:InformationOnRelatedEntities contextRef="D0" xml:lang="en"> 
+                                           Maxi Zoo Denmark A/S' related parties comprise the following:Control                                          Freesnapf Beteiligungs GmbH, Westpreussenstrasse 32-38, D-47809 Krefeld, Germany.                                          Freesnapf Beteiligungs GmbH holds the majority of the contributed capital in the Company.                                          Maxi Zoo Denmark A/S is part of the consolidated financial statements of Freesnapf Beteiligungs GmbH, Krefeld, Germany, which is the smallest and largest group, in which the Company is included as a subsidiary.                                          The consolidated financial statements of Freesnapf Beteiligungs GmbH can be obtained by contacting the Company at the address above.DKK'00020242023  
+                                           Purchase of goods from group enterprises223,651278,815  
+                                           Purchase of services from group enterprises2,5122,452                                          Receivables from and payables to group entities are disclosed in the balance sheet, and income interest and expenses are disclosed in note 5 and 6.</fsa:InformationOnRelatedEntities>
+</xbrli:xbrl>

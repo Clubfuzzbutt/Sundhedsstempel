@@ -1,0 +1,68 @@
+{
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+        "total": 3,
+        "successful": 3,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 22,
+        "max_score": null,
+        "hits": [
+            {
+                "_index": "indberetninger-20230623",
+                "_type": "_doc",
+                "_id": "urn:ofk:oid:37929136",
+                "_score": null,
+                "_source": {
+                    "cvrNummer": 10117224,
+                    "regNummer": null,
+                    "omgoerelse": false,
+                    "sagsNummer": "X25-DC-28-JK",
+                    "offentliggoerelsestype": "regnskab",
+                    "regnskab": {
+                        "godkendelse": {
+                            "dirigent": "Nicolai Mallet",
+                            "godkendelsesdato": "2025-06-30"
+                        },
+                        "regnskabsperiode": {
+                            "startDato": "2024-01-01",
+                            "slutDato": "2024-12-31"
+                        }
+                    },
+                    "offentliggoerelsesTidspunkt": "2025-07-01T12:27:52.275Z",
+                    "indlaesningsTidspunkt": "2025-07-16T05:51:03.930Z",
+                    "sidstOpdateret": "2025-07-01T12:27:52.782Z",
+                    "dokumenter": [
+                        {
+                            "dokumentUrl": "http:\/\/regnskaber.virk.dk\/42271101\/amNsb3VkczovLzAzLzhiLzE4L2EyL2MzL2JiNDMtNGU1OS1hN2ViLTE4OTk1NjdhMTg4YQ.xml",
+                            "dokumentMimeType": "application\/xml",
+                            "dokumentType": "AARSRAPPORT"
+                        },
+                        {
+                            "dokumentUrl": "http:\/\/regnskaber.virk.dk\/42271101\/amNsb3VkczovLzAzL2JhLzA3L2U4LzY1LzM5MWMtNGE5Yi04NmZkLTkyYjBjMTE3MDEyYQ.xhtml",
+                            "dokumentMimeType": "application\/xhtml+xml",
+                            "dokumentType": "AARSRAPPORT"
+                        },
+                        {
+                            "dokumentUrl": "http:\/\/regnskaber.virk.dk\/42271101\/amNsb3VkczovLzAyL2I4LzllLzVlLzMxL2E2MDctNGViYS1hN2Q1LTIxZDZjMTE0NDAyNA.xml",
+                            "dokumentMimeType": "application\/xml",
+                            "dokumentType": "AARSRAPPORT"
+                        },
+                        {
+                            "dokumentUrl": "http:\/\/regnskaber.virk.dk\/42271101\/amNsb3VkczovLzAyL2Y2L2ExLzRhL2UyLzQ2ODctNDRjMS1hNDg4LWI5ZjA4YzNmODgxYw.xhtml",
+                            "dokumentMimeType": "application\/xhtml+xml",
+                            "dokumentType": "AARSRAPPORT"
+                        }
+                    ],
+                    "indlaesningsId": "AZgNyAJ7hegZy6r8KBFt"
+                },
+                "sort": [
+                    1751372872275
+                ]
+            }
+        ]
+    }
+}

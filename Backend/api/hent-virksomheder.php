@@ -128,7 +128,9 @@ function hentRegnskabsData($cvr) {
     }
 
     // Omsætningsaktiver (CurrentAssets)
-    if (preg_match('/<[a-z]+:CurrentAssets[^>]*>(\d+)/i', $content, $match)) {
+    if (preg_match('/<fsa:CurrentAssets\s+contextRef="I0"[^>]*>(\d+)/i', $content, $match)) {
+        $nogletal['omsaetningsaktiver'] = (int)$match[1];
+    }   elseif (preg_match('/<[a-z]+:CurrentAssets[^>]*>(\d+)/i', $content, $match)) {
         $nogletal['omsaetningsaktiver'] = (int)$match[1];
     } elseif (preg_match('/<[a-z]+:TotalCurrentAssets[^>]*>(\d+)/i', $content, $match)) {
         $nogletal['omsaetningsaktiver'] = (int)$match[1];
@@ -140,15 +142,16 @@ function hentRegnskabsData($cvr) {
     }
 
     // Kortfristet gæld (CurrentLiabilities)
-    if (preg_match('/<[a-z]+:CurrentLiabilities[^>]*>(\d+)/i', $content, $match)) {
+    if (preg_match('/<[a-z]+:ShorttermLiabilitiesOtherThanProvisions[^>]*>(\d+)/i', $content, $match)) {
+        $nogletal['kortfristetGaeld'] = (int)$match[1];
+    } elseif (preg_match('/<[a-z]+:CurrentLiabilities[^>]*>(\d+)/i', $content, $match)) {
         $nogletal['kortfristetGaeld'] = (int)$match[1];
     } elseif (preg_match('/<[a-z]+:TotalCurrentLiabilities[^>]*>(\d+)/i', $content, $match)) {
         $nogletal['kortfristetGaeld'] = (int)$match[1];
     } elseif (preg_match('/CurrentLiabilities[^>]*>(\d+)/i', $content, $match)) {
         $nogletal['kortfristetGaeld'] = (int)$match[1];
-    }
-    elseif (preg_match('/Short[ -]term\s+(?:debt|liabilities)[^>]*>(\d+)/i', $content, $match)) {
-        $nogletal['kortfristetGaeld'] = (int)$match[1];
+    } elseif (preg_match('/Short[ -]term\s+(?:debt|liabilities)[^>]*>(\d+)/i', $content, $match)) {
+        $nogletal['kortfristetGaeld'] = (int)$match[1]; 
     }
 
 
@@ -161,11 +164,20 @@ function hentRegnskabsData($cvr) {
     if (isset($nogletal['resultat']) && isset($nogletal['omsaetning']) && $nogletal['omsaetning'] > 0) {
         $nogletal['overskudsgrad'] = round(($nogletal['resultat'] / $nogletal['omsaetning']) * 100, 1);
     }
-    
+
+    if (preg_match('/<mrv:LiquidityRatio\s+contextRef="D0"[^>]*>(\d+)/i', $content, $match)) {
+        $likviditet = (int)$match[1];
+        // Hvis tallet er over 1000, divider med 10 (pga. decimals="-3")
+        if ($likviditet > 1000) {
+            $likviditet = $likviditet / 10;
+        }
+        $nogletal['likviditetsgrad'] = $likviditet;
+
+    }
     if (isset($nogletal['omsaetningsaktiver']) && isset($nogletal['kortfristetGaeld']) && $nogletal['kortfristetGaeld'] > 0) {
         $nogletal['likviditetsgrad'] = round(($nogletal['omsaetningsaktiver'] / $nogletal['kortfristetGaeld']) * 100, 1);
     }
-    
+    file_put_contents('debug_nogletal.json', json_encode($nogletal, JSON_PRETTY_PRINT));
     return $nogletal;
 }
 

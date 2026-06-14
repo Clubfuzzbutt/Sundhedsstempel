@@ -181,21 +181,41 @@ function hentRegnskabsData($cvr) {
     return $nogletal;
 }
 
-// Test med DSV
-// Hent data for det CVR der sendes via URL
-$cvr = isset($_GET['cvr']) ? $_GET['cvr'] : '10117224';
-$data = hentRegnskabsData($cvr);
-//$navn = hentVirksomhedDataFraCVRAPI($cvr);
+function hentVirksomhedsNavn($cvr) {
+        $url = "http://cvrapi.dk/api?search={$cvr}&country=dk";
+        $options = [
+            'http' => [
+                'header' => "User-Agent: Mit Sundhedsstempel Projekt - Studieprojekt\r\n" 
+            ]
+        ];
+        $context = stream_context_create($options);   
+        $response = @file_get_contents($url, false, $context);    
+           if ($response === FALSE) {
+            return null;
+            }    
+        $data = json_decode($response, true);
+        return $data['name'] ?? null;
+    }
 
-// Returner JSON (INGEN HTML)
-header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
+   $cvr = isset($_GET['cvr']) ? $_GET['cvr'] : null;
 
-if ($data && isset($data['omsaetning'])) {
-    $data['virksomhedsnavn'] = '';
-    echo json_encode($data);
-} else {
-    echo json_encode(['error' => 'Ingen regnskabsdata fundet for CVR: ' . $cvr]);
-}
+    if (!$cvr) {
+        header('Content-Type: application/json');
+        echo json_encode(['error' => 'Intet CVR-nummer angivet']);
+        exit;
+    }
+
+    $data = hentRegnskabsData($cvr);
+    $navn = hentVirksomhedsNavn($cvr);
+
+    header('Content-Type: application/json');
+    header('Access-Control-Allow-Origin: *');
+
+    if ($data && isset($data['omsaetning'])) {
+        $data['virksomhedsnavn'] = $navn ?? '';
+        echo json_encode($data);
+    } else {
+        echo json_encode(['error' => 'Ingen regnskabsdata fundet for CVR: ' . $cvr]);
+    }
 
 ?>

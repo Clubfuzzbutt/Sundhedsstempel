@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundhedsstempel – Eksempel på forsiden</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #f7b500;
+            padding-bottom: 1rem;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            color: #1a1a2e;
+        }
+
+        .header p {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .company {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .company h2 {
+            font-size: 1.6rem;
+            color: #1a1a2e;
+        }
+
+        .company .tagline {
+            color: #888;
+            font-style: italic;
+            margin-top: 0.25rem;
+        }
+
+        .badge {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .badge-circle {
+            width: 120px;
+            height: 120px;
+            background: #4CAF50;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        .badge-icon {
+            font-size: 3rem;
+        }
+
+        .badge-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-figures {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .figure-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .figure-row:last-child {
+            border-bottom: none;
+        }
+
+        .figure-label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .figure-value {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .read-more-btn {
+            width: 100%;
+            background: #f7b500;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-bottom: 1rem;
+        }
+
+        .read-more-btn:hover {
+            background: #e0a500;
+        }
+
+        .expandable-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .expandable-panel.open {
+            max-height: 300px;
+            transition: max-height 0.4s ease-in;
+        }
+
+        .panel-content {
+            padding: 1rem;
+        }
+
+        .panel-title {
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: #1a1a2e;
+        }
+
+        .threshold-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .threshold-table th, .threshold-table td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .threshold-table th {
+            background: #e9ecef;
+        }
+
+        .green-dot { background: #4CAF50; }
+        .yellow-dot { background: #FFC107; }
+        .red-dot { background: #F44336; }
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .note {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>🏥 Økonomisk Sundhedsstempel</h1>
+        </div>
+
+        <div class="company">
+            <h2>Dream Company A/S</h2>
+            <div class="tagline">"Innovation i verdensklasse"</div>
+        </div>
+
+        <div class="badge">
+            <div class="badge-circle">
+                <span class="badge-icon">🛡️</span>
+            </div>
+            <div class="badge-title">Økonomisk Stabil</div>
+        </div>
+
+        <div class="key-figures">
+            <div class="figure-row">
+                <span class="figure-label">Soliditetsgrad</span>
+                <span class="figure-value">65%</span>
+            </div>
+            <div class="figure-row">
+                <span class="figure-label">Overskudsgrad</span>
+                <span class="figure-value">12,4%</span>
+            </div>
+            <div class="figure-row">
+                <span class="figure-label">Likviditetsgrad</span>
+                <span class="figure-value">210%</span>
+            </div>
+        </div>
+
+        <button class="read-more-btn" onclick="togglePanel()">📖 Læs mere om vurderingskriterier</button>
+
+        <div id="expandablePanel" class="expandable-panel">
+            <div class="panel-content">
+                <div class="panel-title">Vurderingskriterier:</div>
+                <table class="threshold-table">
+                    <tr><th>Nøgletal</th><th>Grøn</th><th>Gul</th><th>Rød</th></tr>
+                    <tr><td>Soliditetsgrad</td><td><span class="dot green-dot"></span> ≥ 30%</td><td><span class="dot yellow-dot"></span> 10-29%</td><td><span class="dot red-dot"></span> < 10%</td></tr>
+                    <tr><td>Overskudsgrad</td><td><span class="dot green-dot"></span> ≥ 10%</td><td><span class="dot yellow-dot"></span> 2-9,9%</td><td><span class="dot red-dot"></span> < 2%</td></tr>
+                    <tr><td>Likviditetsgrad</td><td><span class="dot green-dot"></span> ≥ 150%</td><td><span class="dot yellow-dot"></span> 100-149%</td><td><span class="dot red-dot"></span> < 100%</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="note">
+            Eksempel på en sund virksomhed – en prototype udviklet til Move On Career
+        </div>
+    </div>
+
+    <script>
+        function togglePanel() {
+            const panel = document.getElementById('expandablePanel');
+            if (panel) panel.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

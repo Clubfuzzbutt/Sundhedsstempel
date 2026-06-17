@@ -7,7 +7,7 @@ Prototypen henter offentligt tilgængelige regnskabsdata fra Erhvervsstyrelsens 
 
 Prototypen er hostet på InfinityFree og kan afprøves her:
 
-**http://sundhedsstempel.infinityfree.me/index.html**
+**https://sundhedsstempel.infinityfree.me/index.html**
 
 *Bemærk: InfinityFree er en gratis hostingplatform og kan være ustabil. Hvis linket ikke virker, anbefales lokal installation (se nedenfor).*
 

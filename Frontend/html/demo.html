@@ -292,6 +292,7 @@
         if (!cvr || cvr.length !== 8) {
             document.getElementById('companyName').innerText = 'Indtast CVR nummer';
             document.getElementById('companyCvr').innerText = 'CVR skal være 8 cifre';
+            document.getElementById('badgeArea').innerHTML = '';
             return;
         }
         
@@ -363,6 +364,9 @@
             document.getElementById('companyCvr').innerText = `CVR: ${cvr}`;
             
 
+     
+            
+
             // Generer badge HTML
             let badgeHtml = `
                 <div class="badge">
@@ -412,6 +416,7 @@
             console.error('Fejl:', error);
             document.getElementById('companyName').innerHTML = 'Fejl ved forbindelse';
             document.getElementById('companyCvr').innerHTML = 'Kan ikke nå serveren';
+            document.getElementById('badgeArea').innerHTML = '';
         }
     }
     

@@ -358,7 +358,7 @@
                 status = 'Ukendt';
             }
 
-            // Opdater firmanavn (hent evt. fra CVR API)
+            // Opdater firmanavn 
             const virksomhedsNavn = result.virksomhedsnavn || `Virksomhed med CVR: ${cvr}`;
             document.getElementById('companyName').innerText = virksomhedsNavn;
             document.getElementById('companyCvr').innerText = `CVR: ${cvr}`;
@@ -421,7 +421,7 @@
         if (panel) panel.classList.toggle('open');
     }
     
-    // Initial load
+   
     updateBadge();
 </script>
 </body>
